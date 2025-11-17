@@ -1,0 +1,12 @@
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\bin\Debug\net8.0\NIBAUTH.Domain.deps.json
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\bin\Debug\net8.0\NIBAUTH.Domain.dll
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\bin\Debug\net8.0\NIBAUTH.Domain.pdb
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIBAUTH.Domain.csproj.AssemblyReference.cache
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIBAUTH.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIBAUTH.Domain.AssemblyInfoInputs.cache
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIBAUTH.Domain.AssemblyInfo.cs
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIBAUTH.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIBAUTH.Domain.dll
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\refint\NIBAUTH.Domain.dll
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIBAUTH.Domain.pdb
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\ref\NIBAUTH.Domain.dll

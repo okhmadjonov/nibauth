@@ -1,0 +1,6 @@
+@NIBAUTH.WebApi_HostAddress = http://localhost:5047
+
+GET {{NIBAUTH.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

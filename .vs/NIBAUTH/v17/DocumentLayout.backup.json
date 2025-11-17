@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C8413204-ED68-4D47-94EE-07495DFE5A4A}|NIBAUTH.WebApi\\NIBAUTH.WebApi.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C8413204-ED68-4D47-94EE-07495DFE5A4A}|NIBAUTH.WebApi\\NIBAUTH.WebApi.csproj|solutionrelative:nibauth.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AF2A78-37BF-4DB3-9818-BC3364CD4600}|NIBAUTH.Domain\\NIBAUTH.Domain.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.domain\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AF2A78-37BF-4DB3-9818-BC3364CD4600}|NIBAUTH.Domain\\NIBAUTH.Domain.csproj|solutionrelative:nibauth.domain\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8413204-ED68-4D47-94EE-07495DFE5A4A}|NIBAUTH.WebApi\\NIBAUTH.WebApi.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.webapi\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8413204-ED68-4D47-94EE-07495DFE5A4A}|NIBAUTH.WebApi\\NIBAUTH.WebApi.csproj|solutionrelative:nibauth.webapi\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\regions\\regiongetallquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\regions\\regiongetallquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\regions\\regiongetallqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\regions\\regiongetallqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\regions\\regiongetallqueryvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\regions\\regiongetallqueryvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\regions\\regionitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\regions\\regionitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "NIBAUTH.WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.WebApi\\appsettings.json",
+              "RelativeToolTip": "NIBAUTH.WebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-17T06:45:06.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Domain\\Roles.cs",
+              "RelativeDocumentMoniker": "NIBAUTH.Domain\\Roles.cs",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Domain\\Roles.cs",
+              "RelativeToolTip": "NIBAUTH.Domain\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T06:41:18.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegionsController.cs",
+              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.WebApi\\Controllers\\RegionsController.cs",
+              "RelativeDocumentMoniker": "NIBAUTH.WebApi\\Controllers\\RegionsController.cs",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.WebApi\\Controllers\\RegionsController.cs",
+              "RelativeToolTip": "NIBAUTH.WebApi\\Controllers\\RegionsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T05:50:11.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegionGetAllQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Regions\\RegionGetAllQueryHandler.cs",
+              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Regions\\RegionGetAllQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Regions\\RegionGetAllQueryHandler.cs",
+              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Regions\\RegionGetAllQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T05:49:25.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegionGetAllQueryVm.cs",
+              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Regions\\RegionGetAllQueryVm.cs",
+              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Regions\\RegionGetAllQueryVm.cs",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Regions\\RegionGetAllQueryVm.cs",
+              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Regions\\RegionGetAllQueryVm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T05:49:23.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegionGetAllQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Regions\\RegionGetAllQuery.cs",
+              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Regions\\RegionGetAllQuery.cs",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Regions\\RegionGetAllQuery.cs",
+              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Regions\\RegionGetAllQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T05:49:16.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegionItem.cs",
+              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Regions\\RegionItem.cs",
+              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Regions\\RegionItem.cs",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Regions\\RegionItem.cs",
+              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Regions\\RegionItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T05:47:41.35Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

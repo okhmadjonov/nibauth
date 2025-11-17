@@ -1,0 +1,1059 @@
+2025-11-11 19:18:53.120 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 19:18:54.935 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-11 19:18:55.079 +05:00 [WRN] The WebRootPath was not found: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\wwwroot. Static files may be unavailable.
+2025-11-11 19:18:55.323 +05:00 [INF] Now listening on: https://localhost:7002
+2025-11-11 19:18:55.326 +05:00 [INF] Now listening on: http://localhost:5047
+2025-11-11 19:18:55.471 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-11 19:18:55.474 +05:00 [INF] Hosting environment: Development
+2025-11-11 19:18:55.476 +05:00 [INF] Content root path: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi
+2025-11-11 19:18:56.848 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+2025-11-11 19:18:57.123 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 287.1182ms
+2025-11-11 19:18:57.264 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-11 19:18:57.264 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+2025-11-11 19:18:57.281 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 16.3352ms
+2025-11-11 19:18:57.362 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 98.2012ms
+2025-11-11 19:18:57.727 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+2025-11-11 19:18:57.758 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 30.7109ms
+2025-11-11 19:20:07.272 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 19:20:07.513 +05:00 [FTL]  Application start-up failed.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\Program.cs:line 169
+2025-11-11 19:20:29.470 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 19:20:29.671 +05:00 [FTL]  Application start-up failed.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\Program.cs:line 169
+2025-11-11 19:20:53.189 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 19:20:54.008 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-11 19:20:54.912 +05:00 [INF] Executed DbCommand (53ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?' (DbType = Guid), @p6='?', @p7='?', @p8='?' (DbType = Boolean), @p9='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Languages" ("Id", "Code", "Flag", "IsDefault", "Name")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+INSERT INTO "Languages" ("Id", "Code", "Flag", "IsDefault", "Name")
+VALUES (@p5, @p6, @p7, @p8, @p9);
+2025-11-11 19:20:55.131 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-11 19:20:55.151 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-11 19:20:55.191 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetRoles" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (@p0, @p1, @p2, @p3);
+2025-11-11 19:20:55.199 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-11 19:20:55.205 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-11 19:20:55.212 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetRoles" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (@p0, @p1, @p2, @p3);
+2025-11-11 19:20:55.219 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-11 19:20:55.224 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-11 19:20:55.230 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetRoles" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (@p0, @p1, @p2, @p3);
+2025-11-11 19:20:55.239 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-11 19:20:55.259 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 19:20:55.336 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 19:20:55.420 +05:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Guid), @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?', @p16='?' (DbType = DateTime), @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "CreatedAt", "DefaultRoleId", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PhotoUrl", "RefreshToken", "RefreshTokenExpiryTime", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+2025-11-11 19:20:55.434 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-11-11 19:20:55.479 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__get_Item_0 AND a."RoleId" = @__get_Item_1
+LIMIT 1
+2025-11-11 19:20:55.486 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-11-11 19:20:55.501 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 19:20:55.525 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p21='?' (DbType = Guid), @p2='?' (DbType = Int32), @p3='?', @p22='?', @p4='?' (DbType = DateTime), @p5='?' (DbType = Guid), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?', @p12='?', @p13='?', @p14='?' (DbType = Boolean), @p15='?', @p16='?', @p17='?' (DbType = DateTime), @p18='?', @p19='?' (DbType = Boolean), @p20='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUserRoles" ("RoleId", "UserId")
+VALUES (@p0, @p1);
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p2, "ConcurrencyStamp" = @p3, "CreatedAt" = @p4, "DefaultRoleId" = @p5, "Email" = @p6, "EmailConfirmed" = @p7, "LockoutEnabled" = @p8, "LockoutEnd" = @p9, "NormalizedEmail" = @p10, "NormalizedUserName" = @p11, "PasswordHash" = @p12, "PhoneNumber" = @p13, "PhoneNumberConfirmed" = @p14, "PhotoUrl" = @p15, "RefreshToken" = @p16, "RefreshTokenExpiryTime" = @p17, "SecurityStamp" = @p18, "TwoFactorEnabled" = @p19, "UserName" = @p20
+WHERE "Id" = @p21 AND "ConcurrencyStamp" = @p22;
+2025-11-11 19:20:55.534 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 19:20:55.540 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p19='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-11-11 19:20:55.548 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p19='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-11-11 19:30:22.208 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 19:30:24.264 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-11 19:30:24.403 +05:00 [WRN] The WebRootPath was not found: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\wwwroot. Static files may be unavailable.
+2025-11-11 19:30:25.150 +05:00 [INF] Now listening on: https://localhost:7002
+2025-11-11 19:30:25.156 +05:00 [INF] Now listening on: http://localhost:5047
+2025-11-11 19:30:25.395 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-11 19:30:25.403 +05:00 [INF] Hosting environment: Development
+2025-11-11 19:30:25.407 +05:00 [INF] Content root path: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi
+2025-11-11 19:30:26.627 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+2025-11-11 19:30:27.155 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 543.8726ms
+2025-11-11 19:30:27.213 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-11 19:30:27.250 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 38.0407ms
+2025-11-11 19:30:27.426 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+2025-11-11 19:30:27.535 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 110.3732ms
+2025-11-11 19:30:27.636 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+2025-11-11 19:30:27.703 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.9957ms
+2025-11-11 19:31:04.598 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - application/json 58
+2025-11-11 19:31:05.212 +05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-11 19:31:05.312 +05:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-11-11 19:31:05.327 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 19:31:05.419 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Auth.Login.LoginVm]] Login(NIBAUTH.Application.Operations.Auth.Login.LoginDto) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-11 19:31:06.419 +05:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-11-11 19:31:06.501 +05:00 [INF] NIB Request: LoginCommand "00000000-0000-0000-0000-000000000000" {"Username":"martin","Password":"AdmIn123@!j","$type":"LoginCommand"}
+2025-11-11 19:31:10.987 +05:00 [INF] Executed DbCommand (222ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 19:31:11.987 +05:00 [INF] Executed DbCommand (20ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+WHERE a."Id" = @__user_Id_0
+LIMIT 1
+2025-11-11 19:31:12.105 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 19:31:12.555 +05:00 [INF] Executed DbCommand (20ms) [Parameters=[@p19='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-11-11 19:31:12.644 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Auth.Login.LoginVm'.
+2025-11-11 19:31:12.685 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi) in 7248.5016ms
+2025-11-11 19:31:12.695 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 19:31:12.721 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - 200 null application/json; charset=utf-8 8122.6909ms
+2025-11-11 21:16:47.446 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 21:16:47.959 +05:00 [FTL]  Application start-up failed.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\Program.cs:line 169
+2025-11-11 21:17:07.197 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 21:17:07.393 +05:00 [FTL]  Application start-up failed.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\Program.cs:line 169
+2025-11-11 21:17:24.400 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 21:17:25.771 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-11 21:17:26.647 +05:00 [INF] Executed DbCommand (42ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?' (DbType = Guid), @p6='?', @p7='?', @p8='?' (DbType = Boolean), @p9='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Languages" ("Id", "Code", "Flag", "IsDefault", "Name")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+INSERT INTO "Languages" ("Id", "Code", "Flag", "IsDefault", "Name")
+VALUES (@p5, @p6, @p7, @p8, @p9);
+2025-11-11 21:17:26.695 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid), @p3='?', @p4='?' (DbType = Guid), @p5='?', @p6='?' (DbType = Guid), @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?' (DbType = Guid), @p11='?', @p12='?' (DbType = Guid), @p13='?', @p14='?' (DbType = Guid), @p15='?', @p16='?' (DbType = Guid), @p17='?', @p18='?' (DbType = Guid), @p19='?', @p20='?' (DbType = Guid), @p21='?', @p22='?' (DbType = Guid), @p23='?', @p24='?' (DbType = Guid), @p25='?', @p26='?' (DbType = Guid), @p27='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p0, @p1);
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p2, @p3);
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p4, @p5);
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p6, @p7);
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p8, @p9);
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p10, @p11);
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p12, @p13);
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p14, @p15);
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p16, @p17);
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p18, @p19);
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p20, @p21);
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p22, @p23);
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p24, @p25);
+INSERT INTO "Regions" ("Id", "Code")
+VALUES (@p26, @p27);
+2025-11-11 21:17:26.761 +05:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Boolean), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Guid), @p6='?' (DbType = Guid), @p7='?' (DbType = Guid), @p8='?' (DbType = Guid), @p9='?' (DbType = Boolean), @p10='?' (DbType = Guid), @p11='?', @p12='?' (DbType = Guid), @p13='?' (DbType = Guid), @p14='?' (DbType = Guid), @p15='?' (DbType = Guid), @p16='?' (DbType = Boolean), @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Guid), @p20='?' (DbType = Guid), @p21='?' (DbType = Guid), @p22='?' (DbType = Guid), @p23='?' (DbType = Boolean), @p24='?' (DbType = Guid), @p25='?', @p26='?' (DbType = Guid), @p27='?' (DbType = Guid), @p28='?' (DbType = Guid), @p29='?' (DbType = Guid), @p30='?' (DbType = Boolean), @p31='?' (DbType = Guid), @p32='?', @p33='?' (DbType = Guid), @p34='?' (DbType = Guid), @p35='?' (DbType = Guid), @p36='?' (DbType = Guid), @p37='?' (DbType = Boolean), @p38='?' (DbType = Guid), @p39='?', @p40='?' (DbType = Guid), @p41='?' (DbType = Guid), @p42='?' (DbType = Guid), @p43='?' (DbType = Guid), @p44='?' (DbType = Boolean), @p45='?' (DbType = Guid), @p46='?', @p47='?' (DbType = Guid), @p48='?' (DbType = Guid), @p49='?' (DbType = Guid), @p50='?' (DbType = Guid), @p51='?' (DbType = Boolean), @p52='?' (DbType = Guid), @p53='?', @p54='?' (DbType = Guid), @p55='?' (DbType = Guid), @p56='?' (DbType = Guid), @p57='?' (DbType = Guid), @p58='?' (DbType = Boolean), @p59='?' (DbType = Guid), @p60='?', @p61='?' (DbType = Guid), @p62='?' (DbType = Guid), @p63='?' (DbType = Guid), @p64='?' (DbType = Guid), @p65='?' (DbType = Boolean), @p66='?' (DbType = Guid), @p67='?', @p68='?' (DbType = Guid), @p69='?' (DbType = Guid), @p70='?' (DbType = Guid), @p71='?' (DbType = Guid), @p72='?' (DbType = Boolean), @p73='?' (DbType = Guid), @p74='?', @p75='?' (DbType = Guid), @p76='?' (DbType = Guid), @p77='?' (DbType = Guid), @p78='?' (DbType = Guid), @p79='?' (DbType = Boolean), @p80='?' (DbType = Guid), @p81='?', @p82='?' (DbType = Guid), @p83='?' (DbType = Guid), @p84='?' (DbType = Guid), @p85='?' (DbType = Guid), @p86='?' (DbType = Boolean), @p87='?' (DbType = Guid), @p88='?', @p89='?' (DbType = Guid), @p90='?' (DbType = Guid), @p91='?' (DbType = Guid), @p92='?' (DbType = Guid), @p93='?' (DbType = Boolean), @p94='?' (DbType = Guid), @p95='?', @p96='?' (DbType = Guid), @p97='?' (DbType = Guid), @p98='?' (DbType = Guid), @p99='?' (DbType = Guid), @p100='?' (DbType = Boolean), @p101='?' (DbType = Guid), @p102='?', @p103='?' (DbType = Guid), @p104='?' (DbType = Guid), @p105='?' (DbType = Guid), @p106='?' (DbType = Guid), @p107='?' (DbType = Boolean), @p108='?' (DbType = Guid), @p109='?', @p110='?' (DbType = Guid), @p111='?' (DbType = Guid), @p112='?' (DbType = Guid), @p113='?' (DbType = Guid), @p114='?' (DbType = Boolean), @p115='?' (DbType = Guid), @p116='?', @p117='?' (DbType = Guid), @p118='?' (DbType = Guid), @p119='?' (DbType = Guid), @p120='?' (DbType = Guid), @p121='?' (DbType = Boolean), @p122='?' (DbType = Guid), @p123='?', @p124='?' (DbType = Guid), @p125='?' (DbType = Guid), @p126='?' (DbType = Guid), @p127='?' (DbType = Guid), @p128='?' (DbType = Boolean), @p129='?' (DbType = Guid), @p130='?', @p131='?' (DbType = Guid), @p132='?' (DbType = Guid), @p133='?' (DbType = Guid), @p134='?' (DbType = Guid), @p135='?' (DbType = Boolean), @p136='?' (DbType = Guid), @p137='?', @p138='?' (DbType = Guid), @p139='?' (DbType = Guid), @p140='?' (DbType = Guid), @p141='?' (DbType = Guid), @p142='?' (DbType = Boolean), @p143='?' (DbType = Guid), @p144='?', @p145='?' (DbType = Guid), @p146='?' (DbType = Guid), @p147='?' (DbType = Guid), @p148='?' (DbType = Guid), @p149='?' (DbType = Boolean), @p150='?' (DbType = Guid), @p151='?', @p152='?' (DbType = Guid), @p153='?' (DbType = Guid), @p154='?' (DbType = Guid), @p155='?' (DbType = Guid), @p156='?' (DbType = Boolean), @p157='?' (DbType = Guid), @p158='?', @p159='?' (DbType = Guid), @p160='?' (DbType = Guid), @p161='?' (DbType = Guid), @p162='?' (DbType = Guid), @p163='?' (DbType = Boolean), @p164='?' (DbType = Guid), @p165='?', @p166='?' (DbType = Guid), @p167='?' (DbType = Guid), @p168='?' (DbType = Guid), @p169='?' (DbType = Guid), @p170='?' (DbType = Boolean), @p171='?' (DbType = Guid), @p172='?', @p173='?' (DbType = Guid), @p174='?' (DbType = Guid), @p175='?' (DbType = Guid), @p176='?' (DbType = Guid), @p177='?' (DbType = Boolean), @p178='?' (DbType = Guid), @p179='?', @p180='?' (DbType = Guid), @p181='?' (DbType = Guid), @p182='?' (DbType = Guid), @p183='?' (DbType = Guid), @p184='?' (DbType = Boolean), @p185='?' (DbType = Guid), @p186='?', @p187='?' (DbType = Guid), @p188='?' (DbType = Guid), @p189='?' (DbType = Guid), @p190='?' (DbType = Guid), @p191='?' (DbType = Boolean), @p192='?' (DbType = Guid), @p193='?', @p194='?' (DbType = Guid), @p195='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p14, @p15, @p16, @p17, @p18, @p19, @p20)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p21, @p22, @p23, @p24, @p25, @p26, @p27)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p28, @p29, @p30, @p31, @p32, @p33, @p34)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p35, @p36, @p37, @p38, @p39, @p40, @p41)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p42, @p43, @p44, @p45, @p46, @p47, @p48)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p49, @p50, @p51, @p52, @p53, @p54, @p55)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p56, @p57, @p58, @p59, @p60, @p61, @p62)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p63, @p64, @p65, @p66, @p67, @p68, @p69)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p70, @p71, @p72, @p73, @p74, @p75, @p76)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p77, @p78, @p79, @p80, @p81, @p82, @p83)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p84, @p85, @p86, @p87, @p88, @p89, @p90)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p91, @p92, @p93, @p94, @p95, @p96, @p97)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p98, @p99, @p100, @p101, @p102, @p103, @p104)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p105, @p106, @p107, @p108, @p109, @p110, @p111)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p112, @p113, @p114, @p115, @p116, @p117, @p118)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p119, @p120, @p121, @p122, @p123, @p124, @p125)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p126, @p127, @p128, @p129, @p130, @p131, @p132)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p133, @p134, @p135, @p136, @p137, @p138, @p139)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p140, @p141, @p142, @p143, @p144, @p145, @p146)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p147, @p148, @p149, @p150, @p151, @p152, @p153)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p154, @p155, @p156, @p157, @p158, @p159, @p160)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p161, @p162, @p163, @p164, @p165, @p166, @p167)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p168, @p169, @p170, @p171, @p172, @p173, @p174)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p175, @p176, @p177, @p178, @p179, @p180, @p181)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p182, @p183, @p184, @p185, @p186, @p187, @p188)
+RETURNING "CreatedAt", "UpdatedAt";
+INSERT INTO "RegionTranslates" ("Id", "CreatedById", "IsDeleted", "LanguageId", "Name", "RegionId", "UpdatedById")
+VALUES (@p189, @p190, @p191, @p192, @p193, @p194, @p195)
+RETURNING "CreatedAt", "UpdatedAt";
+2025-11-11 21:17:26.977 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-11 21:17:27.007 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-11 21:17:27.013 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-11 21:17:27.021 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-11 21:17:27.038 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 21:17:27.097 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-11-11 21:17:27.143 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__get_Item_0 AND a."RoleId" = @__get_Item_1
+LIMIT 1
+2025-11-11 21:17:27.162 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 21:17:27.201 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p19='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-11-11 21:17:27.212 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p19='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-11-11 21:27:20.373 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 21:27:22.387 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-11 21:27:22.491 +05:00 [WRN] The WebRootPath was not found: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\wwwroot. Static files may be unavailable.
+2025-11-11 21:27:22.791 +05:00 [INF] Now listening on: https://localhost:7002
+2025-11-11 21:27:22.793 +05:00 [INF] Now listening on: http://localhost:5047
+2025-11-11 21:27:22.975 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-11 21:27:22.980 +05:00 [INF] Hosting environment: Development
+2025-11-11 21:27:22.984 +05:00 [INF] Content root path: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi
+2025-11-11 21:27:23.566 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+2025-11-11 21:27:23.983 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 424.0124ms
+2025-11-11 21:27:24.053 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-11 21:27:24.454 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+2025-11-11 21:27:24.463 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 410.5065ms
+2025-11-11 21:27:24.518 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.6446ms
+2025-11-11 21:27:24.598 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+2025-11-11 21:27:24.641 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 43.4269ms
+2025-11-11 21:28:14.234 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7002/api/1.0/Auth/login - application/json 55
+2025-11-11 21:28:14.310 +05:00 [INF] CORS policy execution successful.
+2025-11-11 21:28:14.476 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 21:28:14.514 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Auth.Login.LoginVm]] Login(NIBAUTH.Application.Operations.Auth.Login.LoginDto) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-11 21:28:15.395 +05:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-11-11 21:28:15.429 +05:00 [INF] NIB Request: LoginCommand "00000000-0000-0000-0000-000000000000" {"Username":"martin","Password":"AdmIn123@!j","$type":"LoginCommand"}
+2025-11-11 21:28:17.125 +05:00 [INF] Executed DbCommand (89ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 21:28:17.482 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+WHERE a."Id" = @__user_Id_0
+LIMIT 1
+2025-11-11 21:28:17.530 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 21:28:17.686 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[@p19='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-11-11 21:28:17.775 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Auth.Login.LoginVm'.
+2025-11-11 21:28:17.799 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi) in 3271.6167ms
+2025-11-11 21:28:17.803 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 21:28:17.819 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7002/api/1.0/Auth/login - 200 null application/json; charset=utf-8 3586.3135ms
+2025-11-11 21:29:04.022 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/api/1.0/Regions/all - null null
+2025-11-11 21:29:04.108 +05:00 [INF] Executing endpoint 'BB.WebApi.Controllers.RegionsController.GetAll (NIBAUTH.WebApi)'
+2025-11-11 21:29:04.116 +05:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Regions.RegionGetAllQueryVm]] GetAll() on controller BB.WebApi.Controllers.RegionsController (NIBAUTH.WebApi).
+2025-11-11 21:29:04.201 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."Code", l."Flag", l."IsDefault", l."Name"
+FROM "Languages" AS l
+WHERE l."IsDefault"
+LIMIT 1
+2025-11-11 21:29:04.223 +05:00 [INF] NIB Request: RegionGetAllQuery "8042d452-2ec5-4e3a-be1f-dca4e965c62f" {"LangCode":"UZ","$type":"RegionGetAllQuery"}
+2025-11-11 21:29:04.287 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__ToUpper_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r0."Name"
+FROM "Regions" AS r
+CROSS JOIN "RegionTranslates" AS r0
+LEFT JOIN "Regions" AS r1 ON r0."RegionId" = r1."Id"
+LEFT JOIN "Languages" AS l ON r0."LanguageId" = l."Id"
+WHERE r."Id" = r1."Id" AND l."Code" = @__ToUpper_0
+ORDER BY r0."Name"
+2025-11-11 21:29:04.295 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Regions.RegionGetAllQueryVm'.
+2025-11-11 21:29:04.306 +05:00 [INF] Executed action BB.WebApi.Controllers.RegionsController.GetAll (NIBAUTH.WebApi) in 186.6935ms
+2025-11-11 21:29:04.310 +05:00 [INF] Executed endpoint 'BB.WebApi.Controllers.RegionsController.GetAll (NIBAUTH.WebApi)'
+2025-11-11 21:29:04.312 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/api/1.0/Regions/all - 200 null application/json; charset=utf-8 290.4903ms
+2025-11-11 21:31:45.666 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - application/json 58
+2025-11-11 21:31:45.681 +05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-11 21:31:45.735 +05:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-11-11 21:31:45.737 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 21:31:45.740 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Auth.Login.LoginVm]] Login(NIBAUTH.Application.Operations.Auth.Login.LoginDto) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-11 21:31:45.753 +05:00 [INF] NIB Request: LoginCommand "00000000-0000-0000-0000-000000000000" {"Username":"martin","Password":"AdmIn123@!j","$type":"LoginCommand"}
+2025-11-11 21:31:45.778 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 21:31:45.860 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+WHERE a."Id" = @__user_Id_0
+LIMIT 1
+2025-11-11 21:31:45.867 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 21:31:45.877 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p19='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-11-11 21:31:45.883 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Auth.Login.LoginVm'.
+2025-11-11 21:31:45.893 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi) in 149.7258ms
+2025-11-11 21:31:45.896 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 21:31:45.899 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - 200 null application/json; charset=utf-8 232.8163ms
+2025-11-11 21:32:17.188 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/1.0/Regions/all - null null
+2025-11-11 21:32:17.210 +05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-11 21:32:17.230 +05:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-11-11 21:32:17.232 +05:00 [INF] Executing endpoint 'BB.WebApi.Controllers.RegionsController.GetAll (NIBAUTH.WebApi)'
+2025-11-11 21:32:17.266 +05:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Regions.RegionGetAllQueryVm]] GetAll() on controller BB.WebApi.Controllers.RegionsController (NIBAUTH.WebApi).
+2025-11-11 21:32:17.278 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."Code", l."Flag", l."IsDefault", l."Name"
+FROM "Languages" AS l
+WHERE l."IsDefault"
+LIMIT 1
+2025-11-11 21:32:17.297 +05:00 [INF] NIB Request: RegionGetAllQuery "00000000-0000-0000-0000-000000000000" {"LangCode":"UZ","$type":"RegionGetAllQuery"}
+2025-11-11 21:32:17.314 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__ToUpper_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r0."Name"
+FROM "Regions" AS r
+CROSS JOIN "RegionTranslates" AS r0
+LEFT JOIN "Regions" AS r1 ON r0."RegionId" = r1."Id"
+LEFT JOIN "Languages" AS l ON r0."LanguageId" = l."Id"
+WHERE r."Id" = r1."Id" AND l."Code" = @__ToUpper_0
+ORDER BY r0."Name"
+2025-11-11 21:32:17.319 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Regions.RegionGetAllQueryVm'.
+2025-11-11 21:32:17.323 +05:00 [INF] Executed action BB.WebApi.Controllers.RegionsController.GetAll (NIBAUTH.WebApi) in 50.929ms
+2025-11-11 21:32:17.327 +05:00 [INF] Executed endpoint 'BB.WebApi.Controllers.RegionsController.GetAll (NIBAUTH.WebApi)'
+2025-11-11 21:32:17.329 +05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/1.0/Regions/all - 200 null application/json; charset=utf-8 141.705ms
+2025-11-11 21:54:51.254 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 21:54:51.524 +05:00 [FTL]  Application start-up failed.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\Program.cs:line 169
+2025-11-11 21:55:16.824 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 21:55:16.993 +05:00 [FTL]  Application start-up failed.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\Program.cs:line 169
+2025-11-11 22:09:28.517 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 22:09:28.793 +05:00 [FTL]  Application start-up failed.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\Program.cs:line 169
+2025-11-11 22:09:43.947 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 22:09:44.116 +05:00 [FTL]  Application start-up failed.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\Program.cs:line 169
+2025-11-11 22:14:31.236 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 22:14:33.115 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-11 22:14:33.216 +05:00 [WRN] The WebRootPath was not found: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\wwwroot. Static files may be unavailable.
+2025-11-11 22:14:33.485 +05:00 [INF] Now listening on: https://localhost:7002
+2025-11-11 22:14:33.487 +05:00 [INF] Now listening on: http://localhost:5047
+2025-11-11 22:14:33.628 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-11 22:14:33.630 +05:00 [INF] Hosting environment: Development
+2025-11-11 22:14:33.632 +05:00 [INF] Content root path: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi
+2025-11-11 22:14:34.702 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+2025-11-11 22:14:34.966 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 271.9054ms
+2025-11-11 22:14:35.029 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-11 22:14:35.048 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 18.2592ms
+2025-11-11 22:14:35.127 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+2025-11-11 22:14:35.210 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.9511ms
+2025-11-11 22:14:35.312 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+2025-11-11 22:14:35.354 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 42.3177ms
+2025-11-11 22:17:40.542 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - application/json 58
+2025-11-11 22:17:40.835 +05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-11 22:17:40.891 +05:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-11-11 22:17:40.900 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 22:17:40.942 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Auth.Login.LoginVm]] Login(NIBAUTH.Application.Operations.Auth.Login.LoginDto) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-11 22:17:41.892 +05:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-11-11 22:17:41.925 +05:00 [INF] NIB Request: LoginCommand "00000000-0000-0000-0000-000000000000" {"Username":"martin","Password":"AdmIn123@!j","$type":"LoginCommand"}
+2025-11-11 22:17:43.733 +05:00 [INF] Executed DbCommand (85ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:17:44.130 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+WHERE a."Id" = @__user_Id_0
+LIMIT 1
+2025-11-11 22:17:44.180 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:17:44.352 +05:00 [INF] Executed DbCommand (11ms) [Parameters=[@p19='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-11-11 22:17:44.393 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Auth.Login.LoginVm'.
+2025-11-11 22:17:44.413 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi) in 3462.8704ms
+2025-11-11 22:17:44.417 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 22:17:44.428 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - 200 null application/json; charset=utf-8 3887.0424ms
+2025-11-11 22:19:46.623 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7002/api/1.0/Auth/register - multipart/form-data; boundary=----WebKitFormBoundaryXFeI0mYnNC2MXOKz 583
+2025-11-11 22:19:46.640 +05:00 [INF] CORS policy execution successful.
+2025-11-11 22:19:46.662 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Register (NIBAUTH.WebApi)'
+2025-11-11 22:19:46.677 +05:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Users.Commands.RegisterUser.RegisterUserVm]] Register(NIBAUTH.Application.Operations.Users.Commands.RegisterUser.RegisterUserDto, Microsoft.AspNetCore.Http.IFormFile) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-11 22:19:46.720 +05:00 [INF] NIB Request: RegisterUserCommand "8042d452-2ec5-4e3a-be1f-dca4e965c62f" {"UserName":"django","Password":"Django123@!","PhoneNumber":"+998900000000","RoleId":"1a20cd87-3a57-434e-811c-5be364b863bd","Photo":null,"$type":"RegisterUserCommand"}
+2025-11-11 22:19:46.805 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request_PhoneNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "AspNetUsers" AS a
+    WHERE a."PhoneNumber" = @__request_PhoneNumber_0)
+2025-11-11 22:19:46.825 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__roleId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."Id" = @__roleId_0
+LIMIT 1
+2025-11-11 22:19:46.919 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:19:46.960 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Guid), @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?', @p16='?' (DbType = DateTime), @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "CreatedAt", "DefaultRoleId", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PhotoUrl", "RefreshToken", "RefreshTokenExpiryTime", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+2025-11-11 22:19:46.976 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-11-11 22:19:47.011 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__get_Item_0 AND a."RoleId" = @__get_Item_1
+LIMIT 1
+2025-11-11 22:19:47.021 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-11-11 22:19:47.039 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:19:47.066 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p21='?' (DbType = Guid), @p2='?' (DbType = Int32), @p3='?', @p22='?', @p4='?' (DbType = DateTime), @p5='?' (DbType = Guid), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?', @p12='?', @p13='?', @p14='?' (DbType = Boolean), @p15='?', @p16='?', @p17='?' (DbType = DateTime), @p18='?', @p19='?' (DbType = Boolean), @p20='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUserRoles" ("RoleId", "UserId")
+VALUES (@p0, @p1);
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p2, "ConcurrencyStamp" = @p3, "CreatedAt" = @p4, "DefaultRoleId" = @p5, "Email" = @p6, "EmailConfirmed" = @p7, "LockoutEnabled" = @p8, "LockoutEnd" = @p9, "NormalizedEmail" = @p10, "NormalizedUserName" = @p11, "PasswordHash" = @p12, "PhoneNumber" = @p13, "PhoneNumberConfirmed" = @p14, "PhotoUrl" = @p15, "RefreshToken" = @p16, "RefreshTokenExpiryTime" = @p17, "SecurityStamp" = @p18, "TwoFactorEnabled" = @p19, "UserName" = @p20
+WHERE "Id" = @p21 AND "ConcurrencyStamp" = @p22;
+2025-11-11 22:19:47.086 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Users.Commands.RegisterUser.RegisterUserVm'.
+2025-11-11 22:19:47.103 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Register (NIBAUTH.WebApi) in 423.08ms
+2025-11-11 22:19:47.106 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Register (NIBAUTH.WebApi)'
+2025-11-11 22:19:47.109 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7002/api/1.0/Auth/register - 200 null application/json; charset=utf-8 487.0856ms
+2025-11-11 22:21:23.870 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7002/api/1.0/Auth/register - multipart/form-data; boundary=----WebKitFormBoundaryTzmUqnjLu06JPyBc 582
+2025-11-11 22:21:23.890 +05:00 [INF] CORS policy execution successful.
+2025-11-11 22:21:23.895 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Register (NIBAUTH.WebApi)'
+2025-11-11 22:21:23.898 +05:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Users.Commands.RegisterUser.RegisterUserVm]] Register(NIBAUTH.Application.Operations.Users.Commands.RegisterUser.RegisterUserDto, Microsoft.AspNetCore.Http.IFormFile) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-11 22:21:23.917 +05:00 [INF] NIB Request: RegisterUserCommand "8042d452-2ec5-4e3a-be1f-dca4e965c62f" {"UserName":"jumon","Password":"Jumong123@!","PhoneNumber":"+998900000001","RoleId":"5444661b-4eb8-411a-b67f-0e5a041d3263","Photo":null,"$type":"RegisterUserCommand"}
+2025-11-11 22:21:23.947 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request_PhoneNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "AspNetUsers" AS a
+    WHERE a."PhoneNumber" = @__request_PhoneNumber_0)
+2025-11-11 22:21:23.954 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__roleId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."Id" = @__roleId_0
+LIMIT 1
+2025-11-11 22:21:24.050 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:21:24.060 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Guid), @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?', @p16='?' (DbType = DateTime), @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "CreatedAt", "DefaultRoleId", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PhotoUrl", "RefreshToken", "RefreshTokenExpiryTime", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+2025-11-11 22:21:24.066 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-11-11 22:21:24.073 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__get_Item_0 AND a."RoleId" = @__get_Item_1
+LIMIT 1
+2025-11-11 22:21:24.080 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-11-11 22:21:24.086 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:21:24.095 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p21='?' (DbType = Guid), @p2='?' (DbType = Int32), @p3='?', @p22='?', @p4='?' (DbType = DateTime), @p5='?' (DbType = Guid), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?', @p12='?', @p13='?', @p14='?' (DbType = Boolean), @p15='?', @p16='?', @p17='?' (DbType = DateTime), @p18='?', @p19='?' (DbType = Boolean), @p20='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUserRoles" ("RoleId", "UserId")
+VALUES (@p0, @p1);
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p2, "ConcurrencyStamp" = @p3, "CreatedAt" = @p4, "DefaultRoleId" = @p5, "Email" = @p6, "EmailConfirmed" = @p7, "LockoutEnabled" = @p8, "LockoutEnd" = @p9, "NormalizedEmail" = @p10, "NormalizedUserName" = @p11, "PasswordHash" = @p12, "PhoneNumber" = @p13, "PhoneNumberConfirmed" = @p14, "PhotoUrl" = @p15, "RefreshToken" = @p16, "RefreshTokenExpiryTime" = @p17, "SecurityStamp" = @p18, "TwoFactorEnabled" = @p19, "UserName" = @p20
+WHERE "Id" = @p21 AND "ConcurrencyStamp" = @p22;
+2025-11-11 22:21:24.099 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Users.Commands.RegisterUser.RegisterUserVm'.
+2025-11-11 22:21:24.102 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Register (NIBAUTH.WebApi) in 201.2233ms
+2025-11-11 22:21:24.105 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Register (NIBAUTH.WebApi)'
+2025-11-11 22:21:24.108 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7002/api/1.0/Auth/register - 200 null application/json; charset=utf-8 238.9425ms
+2025-11-11 22:21:53.723 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7002/api/1.0/Auth/register - multipart/form-data; boundary=----WebKitFormBoundarymrAecfSQq6oAwhQu 583
+2025-11-11 22:21:53.740 +05:00 [INF] CORS policy execution successful.
+2025-11-11 22:21:53.742 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Register (NIBAUTH.WebApi)'
+2025-11-11 22:21:53.744 +05:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Users.Commands.RegisterUser.RegisterUserVm]] Register(NIBAUTH.Application.Operations.Users.Commands.RegisterUser.RegisterUserDto, Microsoft.AspNetCore.Http.IFormFile) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-11 22:21:53.752 +05:00 [INF] NIB Request: RegisterUserCommand "8042d452-2ec5-4e3a-be1f-dca4e965c62f" {"UserName":"jumong","Password":"Jumong123@!","PhoneNumber":"+998900000002","RoleId":"5444661b-4eb8-411a-b67f-0e5a041d3263","Photo":null,"$type":"RegisterUserCommand"}
+2025-11-11 22:21:53.772 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__request_PhoneNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "AspNetUsers" AS a
+    WHERE a."PhoneNumber" = @__request_PhoneNumber_0)
+2025-11-11 22:21:53.790 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__roleId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."Id" = @__roleId_0
+LIMIT 1
+2025-11-11 22:21:53.871 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:21:53.879 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Guid), @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?', @p16='?' (DbType = DateTime), @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "CreatedAt", "DefaultRoleId", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PhotoUrl", "RefreshToken", "RefreshTokenExpiryTime", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+2025-11-11 22:21:53.886 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-11-11 22:21:53.891 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__get_Item_0 AND a."RoleId" = @__get_Item_1
+LIMIT 1
+2025-11-11 22:21:53.897 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-11-11 22:21:53.903 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:21:53.911 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p21='?' (DbType = Guid), @p2='?' (DbType = Int32), @p3='?', @p22='?', @p4='?' (DbType = DateTime), @p5='?' (DbType = Guid), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?', @p12='?', @p13='?', @p14='?' (DbType = Boolean), @p15='?', @p16='?', @p17='?' (DbType = DateTime), @p18='?', @p19='?' (DbType = Boolean), @p20='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUserRoles" ("RoleId", "UserId")
+VALUES (@p0, @p1);
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p2, "ConcurrencyStamp" = @p3, "CreatedAt" = @p4, "DefaultRoleId" = @p5, "Email" = @p6, "EmailConfirmed" = @p7, "LockoutEnabled" = @p8, "LockoutEnd" = @p9, "NormalizedEmail" = @p10, "NormalizedUserName" = @p11, "PasswordHash" = @p12, "PhoneNumber" = @p13, "PhoneNumberConfirmed" = @p14, "PhotoUrl" = @p15, "RefreshToken" = @p16, "RefreshTokenExpiryTime" = @p17, "SecurityStamp" = @p18, "TwoFactorEnabled" = @p19, "UserName" = @p20
+WHERE "Id" = @p21 AND "ConcurrencyStamp" = @p22;
+2025-11-11 22:21:53.918 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Users.Commands.RegisterUser.RegisterUserVm'.
+2025-11-11 22:21:53.928 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Register (NIBAUTH.WebApi) in 178.2535ms
+2025-11-11 22:21:53.931 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Register (NIBAUTH.WebApi)'
+2025-11-11 22:21:53.934 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7002/api/1.0/Auth/register - 200 null application/json; charset=utf-8 211.0859ms
+2025-11-11 22:24:08.204 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7002/api/1.0/Auth/register - multipart/form-data; boundary=----WebKitFormBoundarysEUaEYEBXmG9lRJJ 585
+2025-11-11 22:24:08.224 +05:00 [INF] CORS policy execution successful.
+2025-11-11 22:24:08.228 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Register (NIBAUTH.WebApi)'
+2025-11-11 22:24:08.231 +05:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Users.Commands.RegisterUser.RegisterUserVm]] Register(NIBAUTH.Application.Operations.Users.Commands.RegisterUser.RegisterUserDto, Microsoft.AspNetCore.Http.IFormFile) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-11 22:24:08.238 +05:00 [INF] NIB Request: RegisterUserCommand "8042d452-2ec5-4e3a-be1f-dca4e965c62f" {"UserName":"iivuser","Password":"Iivuser123@!","PhoneNumber":"+998900000007","RoleId":"8e0f866f-2100-4cfa-a6a8-a0bb783aa9af","Photo":null,"$type":"RegisterUserCommand"}
+2025-11-11 22:24:08.348 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__request_PhoneNumber_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "AspNetUsers" AS a
+    WHERE a."PhoneNumber" = @__request_PhoneNumber_0)
+2025-11-11 22:24:08.356 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__roleId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."Id" = @__roleId_0
+LIMIT 1
+2025-11-11 22:24:08.455 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:24:08.468 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Guid), @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?', @p16='?' (DbType = DateTime), @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "CreatedAt", "DefaultRoleId", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PhotoUrl", "RefreshToken", "RefreshTokenExpiryTime", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+2025-11-11 22:24:08.473 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-11-11 22:24:08.480 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__get_Item_0 AND a."RoleId" = @__get_Item_1
+LIMIT 1
+2025-11-11 22:24:08.487 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-11-11 22:24:08.493 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:24:08.502 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p21='?' (DbType = Guid), @p2='?' (DbType = Int32), @p3='?', @p22='?', @p4='?' (DbType = DateTime), @p5='?' (DbType = Guid), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?', @p12='?', @p13='?', @p14='?' (DbType = Boolean), @p15='?', @p16='?', @p17='?' (DbType = DateTime), @p18='?', @p19='?' (DbType = Boolean), @p20='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUserRoles" ("RoleId", "UserId")
+VALUES (@p0, @p1);
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p2, "ConcurrencyStamp" = @p3, "CreatedAt" = @p4, "DefaultRoleId" = @p5, "Email" = @p6, "EmailConfirmed" = @p7, "LockoutEnabled" = @p8, "LockoutEnd" = @p9, "NormalizedEmail" = @p10, "NormalizedUserName" = @p11, "PasswordHash" = @p12, "PhoneNumber" = @p13, "PhoneNumberConfirmed" = @p14, "PhotoUrl" = @p15, "RefreshToken" = @p16, "RefreshTokenExpiryTime" = @p17, "SecurityStamp" = @p18, "TwoFactorEnabled" = @p19, "UserName" = @p20
+WHERE "Id" = @p21 AND "ConcurrencyStamp" = @p22;
+2025-11-11 22:24:08.507 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Users.Commands.RegisterUser.RegisterUserVm'.
+2025-11-11 22:24:08.509 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Register (NIBAUTH.WebApi) in 272.9281ms
+2025-11-11 22:24:08.512 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Register (NIBAUTH.WebApi)'
+2025-11-11 22:24:08.520 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7002/api/1.0/Auth/register - 200 null application/json; charset=utf-8 316.6249ms
+2025-11-11 22:26:49.919 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 22:26:52.070 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-11 22:26:52.383 +05:00 [WRN] The WebRootPath was not found: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\wwwroot. Static files may be unavailable.
+2025-11-11 22:26:52.692 +05:00 [INF] Now listening on: https://localhost:7002
+2025-11-11 22:26:52.693 +05:00 [INF] Now listening on: http://localhost:5047
+2025-11-11 22:26:53.163 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-11 22:26:53.165 +05:00 [INF] Hosting environment: Development
+2025-11-11 22:26:53.167 +05:00 [INF] Content root path: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi
+2025-11-11 22:26:54.098 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+2025-11-11 22:26:54.790 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 704.0348ms
+2025-11-11 22:26:55.009 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-11 22:26:55.009 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+2025-11-11 22:26:55.060 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 50.7558ms
+2025-11-11 22:26:55.162 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 154.3967ms
+2025-11-11 22:26:55.356 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+2025-11-11 22:26:55.493 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.372ms
+2025-11-11 22:27:00.066 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - application/json 58
+2025-11-11 22:27:00.417 +05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-11 22:27:00.507 +05:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-11-11 22:27:00.517 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 22:27:00.560 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Auth.Login.LoginVm]] Login(NIBAUTH.Application.Operations.Auth.Login.LoginDto) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-11 22:27:01.094 +05:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-11-11 22:27:01.131 +05:00 [INF] NIB Request: LoginCommand "00000000-0000-0000-0000-000000000000" {"Username":"martin","Password":"AdmIn123@!j","$type":"LoginCommand"}
+2025-11-11 22:27:03.238 +05:00 [INF] Executed DbCommand (99ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:27:03.670 +05:00 [INF] Executed DbCommand (10ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+WHERE a."Id" = @__user_Id_0
+LIMIT 1
+2025-11-11 22:27:03.756 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:27:03.951 +05:00 [INF] Executed DbCommand (27ms) [Parameters=[@p19='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-11-11 22:27:04.009 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Auth.Login.LoginVm'.
+2025-11-11 22:27:04.037 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi) in 3468.9574ms
+2025-11-11 22:27:04.041 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 22:27:04.056 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - 200 null application/json; charset=utf-8 3989.6209ms
+2025-11-11 22:27:10.223 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - application/json 58
+2025-11-11 22:27:10.234 +05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-11 22:27:10.242 +05:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-11-11 22:27:10.245 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 22:27:10.248 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Auth.Login.LoginVm]] Login(NIBAUTH.Application.Operations.Auth.Login.LoginDto) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-11 22:27:10.261 +05:00 [INF] NIB Request: LoginCommand "00000000-0000-0000-0000-000000000000" {"Username":"martin","Password":"AdmIn123@!j","$type":"LoginCommand"}
+2025-11-11 22:27:10.336 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:27:10.428 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+WHERE a."Id" = @__user_Id_0
+LIMIT 1
+2025-11-11 22:27:10.436 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:27:10.445 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p19='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-11-11 22:27:10.453 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Auth.Login.LoginVm'.
+2025-11-11 22:27:10.457 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi) in 205.1355ms
+2025-11-11 22:27:10.461 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 22:27:10.464 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - 200 null application/json; charset=utf-8 241.8146ms
+2025-11-11 22:27:40.416 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - application/json 60
+2025-11-11 22:27:40.437 +05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-11 22:27:40.443 +05:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-11-11 22:27:40.445 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 22:27:40.448 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Auth.Login.LoginVm]] Login(NIBAUTH.Application.Operations.Auth.Login.LoginDto) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-11 22:27:40.466 +05:00 [INF] NIB Request: LoginCommand "00000000-0000-0000-0000-000000000000" {"Username":"iivuser","Password":"Iivuser123@!","$type":"LoginCommand"}
+2025-11-11 22:27:40.492 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:27:40.594 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+WHERE a."Id" = @__user_Id_0
+LIMIT 1
+2025-11-11 22:27:40.602 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:27:40.612 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p19='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-11-11 22:27:40.618 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Auth.Login.LoginVm'.
+2025-11-11 22:27:40.621 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi) in 168.5477ms
+2025-11-11 22:27:40.623 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 22:27:40.626 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - 200 null application/json; charset=utf-8 210.4877ms
+2025-11-11 22:29:01.095 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-11 22:29:03.835 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-11 22:29:04.047 +05:00 [WRN] The WebRootPath was not found: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\wwwroot. Static files may be unavailable.
+2025-11-11 22:29:04.547 +05:00 [INF] Now listening on: https://localhost:7002
+2025-11-11 22:29:04.549 +05:00 [INF] Now listening on: http://localhost:5047
+2025-11-11 22:29:05.243 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-11 22:29:05.246 +05:00 [INF] Hosting environment: Development
+2025-11-11 22:29:05.281 +05:00 [INF] Content root path: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi
+2025-11-11 22:29:05.608 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+2025-11-11 22:29:06.219 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 634.6926ms
+2025-11-11 22:29:06.232 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-11 22:29:06.259 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 26.8183ms
+2025-11-11 22:29:06.313 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+2025-11-11 22:29:06.416 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.2841ms
+2025-11-11 22:29:06.514 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+2025-11-11 22:29:06.560 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.8743ms
+2025-11-11 22:29:32.820 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - application/json 60
+2025-11-11 22:29:33.205 +05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-11 22:29:33.259 +05:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'xfJOoNSFKW40RVL5pSua2YPCYFuTNlZhkVh2tEDwUBE'. , KeyId: 
+'.
+Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'.
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-11-11 22:29:33.265 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 22:29:33.310 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Auth.Login.LoginVm]] Login(NIBAUTH.Application.Operations.Auth.Login.LoginDto) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-11 22:29:33.780 +05:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-11-11 22:29:33.817 +05:00 [INF] NIB Request: LoginCommand "00000000-0000-0000-0000-000000000000" {"Username":"iivuser","Password":"Iivuser123@!","$type":"LoginCommand"}
+2025-11-11 22:29:35.900 +05:00 [INF] Executed DbCommand (91ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:29:36.323 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+WHERE a."Id" = @__user_Id_0
+LIMIT 1
+2025-11-11 22:29:36.384 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-11 22:29:36.611 +05:00 [INF] Executed DbCommand (13ms) [Parameters=[@p19='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-11-11 22:29:36.674 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Auth.Login.LoginVm'.
+2025-11-11 22:29:36.704 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi) in 3384.7795ms
+2025-11-11 22:29:36.710 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-11 22:29:36.729 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/1.0/Auth/login - 200 null application/json; charset=utf-8 3909.382ms
