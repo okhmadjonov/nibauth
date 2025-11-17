@@ -5502,3 +5502,625 @@ WHERE NOT (b."IsDeleted") AND r."Id" = @__request_RegionBranchId_Value_0
 2025-11-17 13:43:06.522 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/swagger/favicon-32x32.png - 200 628 image/png 15.2166ms
 2025-11-17 13:43:06.885 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 398.9022ms
 2025-11-17 13:43:23.615 +05:00 [INF] Application is shutting down...
+2025-11-17 13:48:57.490 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-17 13:48:58.364 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-17 13:48:58.458 +05:00 [WRN] The WebRootPath was not found: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\wwwroot. Static files may be unavailable.
+2025-11-17 13:48:58.603 +05:00 [INF] Now listening on: http://localhost:5047
+2025-11-17 13:48:58.607 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 13:48:58.610 +05:00 [INF] Hosting environment: Development
+2025-11-17 13:48:58.611 +05:00 [INF] Content root path: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi
+2025-11-17 13:49:08.448 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/ - null null
+2025-11-17 13:49:08.688 +05:00 [INF] Executing endpoint 'HTTP: GET /'
+2025-11-17 13:49:08.704 +05:00 [INF] Executed endpoint 'HTTP: GET /'
+2025-11-17 13:49:08.713 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/ - 200 null text/plain; charset=utf-8 268.2337ms
+2025-11-17 13:49:19.926 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/swagger/index.html - null null
+2025-11-17 13:49:20.113 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/swagger/index.html - 200 null text/html;charset=utf-8 186.6667ms
+2025-11-17 13:49:20.594 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/swagger/v1/swagger.json - null null
+2025-11-17 13:49:21.033 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 439.279ms
+2025-11-17 13:50:07.154 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5047/api/1.0/Auth/login - application/json 57
+2025-11-17 13:50:07.366 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-17 13:50:07.421 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Common.Models.ApiResponse`1[NIBAUTH.Application.Operations.Auth.Login.LoginVm]]] Login(NIBAUTH.Application.Operations.Auth.Login.LoginDto) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-17 13:50:07.895 +05:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-11-17 13:50:07.932 +05:00 [INF] NIB Request: LoginCommand "ece3d76b-beea-4e10-8b15-0515553cecea" {"Username":"martin","Password":"Admin123@!","$type":"LoginCommand"}
+2025-11-17 13:50:11.728 +05:00 [INF] Executed DbCommand (180ms) [Parameters=[@__request_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."RegionId", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName", r."Id", r."Code", r."Name"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+LEFT JOIN "Regions" AS r ON a."RegionId" = r."Id"
+WHERE a."UserName" = @__request_Username_0
+LIMIT 1
+2025-11-17 13:50:12.544 +05:00 [INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2025-11-17 13:50:12.589 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."RegionId", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-17 13:50:12.980 +05:00 [INF] Executed DbCommand (22ms) [Parameters=[@p20='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p21='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Guid), @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "RegionId" = @p16, "SecurityStamp" = @p17, "TwoFactorEnabled" = @p18, "UserName" = @p19
+WHERE "Id" = @p20 AND "ConcurrencyStamp" = @p21;
+2025-11-17 13:50:13.118 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Common.Models.ApiResponse`1[[NIBAUTH.Application.Operations.Auth.Login.LoginVm, NIBAUTH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-17 13:50:13.201 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi) in 5760.2046ms
+2025-11-17 13:50:13.206 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-17 13:50:13.228 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5047/api/1.0/Auth/login - 200 null application/json; charset=utf-8 6073.5134ms
+2025-11-17 13:53:31.574 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/Cameras/all?BranchBlockId=a5b245e4-d5ba-464f-ba2c-7a49c1c26fed - null null
+2025-11-17 13:53:31.574 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/Regions/all - null null
+2025-11-17 13:53:31.574 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/BranchBlocks/all?RegionBranchId=25fe55d3-2fff-4ab7-a036-193e3124c2ee - null null
+2025-11-17 13:53:31.574 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/RegionBranches/all?RegionId=088b3deb-573e-48ce-8850-bb3f27b4529b - null null
+2025-11-17 13:53:31.928 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:31.929 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:31.929 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:31.929 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:31.999 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/Cameras/all?BranchBlockId=a5b245e4-d5ba-464f-ba2c-7a49c1c26fed - 204 null null 451.9341ms
+2025-11-17 13:53:32.000 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/RegionBranches/all?RegionId=088b3deb-573e-48ce-8850-bb3f27b4529b - 204 null null 451.9342ms
+2025-11-17 13:53:32.000 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/Regions/all - 204 null null 452.0068ms
+2025-11-17 13:53:32.000 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/BranchBlocks/all?RegionBranchId=25fe55d3-2fff-4ab7-a036-193e3124c2ee - 204 null null 451.9481ms
+2025-11-17 13:53:32.024 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/RegionBranches/all?RegionId=088b3deb-573e-48ce-8850-bb3f27b4529b - null null
+2025-11-17 13:53:32.032 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/Cameras/all?BranchBlockId=a5b245e4-d5ba-464f-ba2c-7a49c1c26fed - null null
+2025-11-17 13:53:32.046 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/BranchBlocks/all?RegionBranchId=25fe55d3-2fff-4ab7-a036-193e3124c2ee - null null
+2025-11-17 13:53:32.061 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/Regions/all - null null
+2025-11-17 13:53:32.120 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:32.120 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:32.120 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:32.120 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:32.253 +05:00 [INF] Executing endpoint 'BB.WebApi.Controllers.RegionsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 13:53:32.324 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.RegionBranchesController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 13:53:32.324 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.BranchBlocksController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 13:53:32.324 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.CamerasController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 13:53:32.389 +05:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Regions.RegionGetAllQueryVm]] GetAll() on controller BB.WebApi.Controllers.RegionsController (NIBAUTH.WebApi).
+2025-11-17 13:53:32.406 +05:00 [INF] Route matched with {action = "GetAll", controller = "Cameras"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Cameras.Queries.GetAll.CamerasAllVm]] GetAll(System.String, System.Nullable`1[System.Guid]) on controller NIBAUTH.WebApi.Controllers.CamerasController (NIBAUTH.WebApi).
+2025-11-17 13:53:32.406 +05:00 [INF] Route matched with {action = "GetAll", controller = "RegionBranches"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.RegionBranches.Queries.GetAll.RegionBranchesAllVm]] GetAll(System.String, System.Nullable`1[System.Guid]) on controller NIBAUTH.WebApi.Controllers.RegionBranchesController (NIBAUTH.WebApi).
+2025-11-17 13:53:32.407 +05:00 [INF] Route matched with {action = "GetAll", controller = "BranchBlocks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.BranchBlock.Queries.GetAll.BranchesBlockAllVm]] GetAll(System.String, System.Nullable`1[System.Guid]) on controller NIBAUTH.WebApi.Controllers.BranchBlocksController (NIBAUTH.WebApi).
+2025-11-17 13:53:32.481 +05:00 [INF] NIB Request: RegionGetAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"$type":"RegionGetAllQuery"}
+2025-11-17 13:53:32.544 +05:00 [INF] NIB Request: RegionBranchesAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","RegionId":"088b3deb-573e-48ce-8850-bb3f27b4529b","$type":"RegionBranchesAllQuery"}
+2025-11-17 13:53:32.542 +05:00 [INF] NIB Request: BranchesBlockAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","RegionBranchId":"25fe55d3-2fff-4ab7-a036-193e3124c2ee","$type":"BranchesBlockAllQuery"}
+2025-11-17 13:53:32.545 +05:00 [INF] NIB Request: CamerasAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","BranchBlockId":"a5b245e4-d5ba-464f-ba2c-7a49c1c26fed","$type":"CamerasAllQuery"}
+2025-11-17 13:53:32.906 +05:00 [INF] Executed DbCommand (164ms) [Parameters=[@__request_BranchBlockId_Value_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."Name", c."Description", c."IpAddress", c."Port", c."Username", c."Password", c."Type", b."Id" AS "BranchBlockId"
+FROM "Cameras" AS c
+INNER JOIN "BrancheBlocks" AS b ON c."BrancheBlockId" = b."Id"
+WHERE NOT (c."IsDeleted") AND b."Id" = @__request_BranchBlockId_Value_0
+2025-11-17 13:53:32.980 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Cameras.Queries.GetAll.CamerasAllVm'.
+2025-11-17 13:53:33.054 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.CamerasController.GetAll (NIBAUTH.WebApi) in 638.328ms
+2025-11-17 13:53:33.057 +05:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name", r."Code"
+FROM "Regions" AS r
+ORDER BY r."Name"
+2025-11-17 13:53:33.057 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.CamerasController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 13:53:33.062 +05:00 [INF] Executed DbCommand (22ms) [Parameters=[@__request_RegionBranchId_Value_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT b."Id", b."Name", b."Description", r."Id" AS "RegionBranchId"
+FROM "BrancheBlocks" AS b
+INNER JOIN "RegionBranches" AS r ON b."RegionBrancheId" = r."Id"
+WHERE NOT (b."IsDeleted") AND r."Id" = @__request_RegionBranchId_Value_0
+2025-11-17 13:53:33.064 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Regions.RegionGetAllQueryVm'.
+2025-11-17 13:53:33.066 +05:00 [INF] Executed DbCommand (26ms) [Parameters=[@__request_RegionId_Value_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name", r."Description", r0."Id" AS "RegionId"
+FROM "RegionBranches" AS r
+INNER JOIN "Regions" AS r0 ON r."RegionId" = r0."Id"
+WHERE NOT (r."IsDeleted") AND r0."Id" = @__request_RegionId_Value_0
+2025-11-17 13:53:33.066 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/Cameras/all?BranchBlockId=a5b245e4-d5ba-464f-ba2c-7a49c1c26fed - 200 null application/json; charset=utf-8 1034.0872ms
+2025-11-17 13:53:33.077 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.BranchBlock.Queries.GetAll.BranchesBlockAllVm'.
+2025-11-17 13:53:33.084 +05:00 [INF] Executed action BB.WebApi.Controllers.RegionsController.GetAll (NIBAUTH.WebApi) in 686.2924ms
+2025-11-17 13:53:33.087 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.RegionBranches.Queries.GetAll.RegionBranchesAllVm'.
+2025-11-17 13:53:33.098 +05:00 [INF] Executed endpoint 'BB.WebApi.Controllers.RegionsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 13:53:33.100 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.BranchBlocksController.GetAll (NIBAUTH.WebApi) in 667.613ms
+2025-11-17 13:53:33.105 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/Regions/all - 200 null application/json; charset=utf-8 1043.8441ms
+2025-11-17 13:53:33.107 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.BranchBlocksController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 13:53:33.107 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.RegionBranchesController.GetAll (NIBAUTH.WebApi) in 682.7112ms
+2025-11-17 13:53:33.114 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/BranchBlocks/all?RegionBranchId=25fe55d3-2fff-4ab7-a036-193e3124c2ee - 200 null application/json; charset=utf-8 1068.4856ms
+2025-11-17 13:53:33.117 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.RegionBranchesController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 13:53:33.125 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/RegionBranches/all?RegionId=088b3deb-573e-48ce-8850-bb3f27b4529b - 200 null application/json; charset=utf-8 1100.7255ms
+2025-11-17 13:53:42.799 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/Auth/login - null null
+2025-11-17 13:53:42.804 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:42.805 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/Auth/login - 204 null null 6.1653ms
+2025-11-17 13:53:42.809 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5047/api/1.0/Auth/login - application/json 45
+2025-11-17 13:53:42.813 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:42.815 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-17 13:53:42.817 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Common.Models.ApiResponse`1[NIBAUTH.Application.Operations.Auth.Login.LoginVm]]] Login(NIBAUTH.Application.Operations.Auth.Login.LoginDto) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-17 13:53:42.844 +05:00 [INF] NIB Request: LoginCommand "00000000-0000-0000-0000-000000000000" {"Username":"martin","Password":"admin123@!","$type":"LoginCommand"}
+2025-11-17 13:53:42.913 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[@__request_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."RegionId", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName", r."Id", r."Code", r."Name"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+LEFT JOIN "Regions" AS r ON a."RegionId" = r."Id"
+WHERE a."UserName" = @__request_Username_0
+LIMIT 1
+2025-11-17 13:53:43.048 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi) in 228.7088ms
+2025-11-17 13:53:43.051 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-17 13:53:43.058 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5047/api/1.0/Auth/login - 417 null application/json 248.3394ms
+2025-11-17 13:53:54.484 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/Auth/login - null null
+2025-11-17 13:53:54.491 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:54.494 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/Auth/login - 204 null null 9.9761ms
+2025-11-17 13:53:54.505 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5047/api/1.0/Auth/login - application/json 45
+2025-11-17 13:53:54.513 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:54.515 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-17 13:53:54.519 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Common.Models.ApiResponse`1[NIBAUTH.Application.Operations.Auth.Login.LoginVm]]] Login(NIBAUTH.Application.Operations.Auth.Login.LoginDto) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-17 13:53:54.533 +05:00 [INF] NIB Request: LoginCommand "00000000-0000-0000-0000-000000000000" {"Username":"martin","Password":"Admin123@!","$type":"LoginCommand"}
+2025-11-17 13:53:54.590 +05:00 [INF] Executed DbCommand (37ms) [Parameters=[@__request_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."RegionId", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName", r."Id", r."Code", r."Name"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+LEFT JOIN "Regions" AS r ON a."RegionId" = r."Id"
+WHERE a."UserName" = @__request_Username_0
+LIMIT 1
+2025-11-17 13:53:54.862 +05:00 [INF] Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2025-11-17 13:53:54.893 +05:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."RegionId", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-17 13:53:54.935 +05:00 [INF] Executed DbCommand (17ms) [Parameters=[@p20='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p21='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Guid), @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "RegionId" = @p16, "SecurityStamp" = @p17, "TwoFactorEnabled" = @p18, "UserName" = @p19
+WHERE "Id" = @p20 AND "ConcurrencyStamp" = @p21;
+2025-11-17 13:53:54.960 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Common.Models.ApiResponse`1[[NIBAUTH.Application.Operations.Auth.Login.LoginVm, NIBAUTH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-17 13:53:54.967 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi) in 439.9573ms
+2025-11-17 13:53:54.974 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-17 13:53:54.979 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5047/api/1.0/Auth/login - 200 null application/json; charset=utf-8 473.6998ms
+2025-11-17 13:53:55.083 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/Auth/me - null null
+2025-11-17 13:53:55.089 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:55.096 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/Auth/me - 204 null null 12.1624ms
+2025-11-17 13:53:55.121 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/Auth/me - null null
+2025-11-17 13:53:55.141 +05:00 [INF] CORS policy execution successful.
+2025-11-17 13:53:55.150 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.GetMe (NIBAUTH.WebApi)'
+2025-11-17 13:53:55.160 +05:00 [INF] Route matched with {action = "GetMe", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Common.Models.ApiResponse`1[NIBAUTH.Application.Operations.Auth.GetMe.GetMeVm]]] GetMe() on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-17 13:53:55.190 +05:00 [INF] NIB Request: GetMeQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"UserId":"ece3d76b-beea-4e10-8b15-0515553cecea","$type":"GetMeQuery"}
+2025-11-17 13:53:55.233 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request_UserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."RegionId", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+WHERE a."Id" = @__request_UserId_0
+LIMIT 1
+2025-11-17 13:53:55.240 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Common.Models.ApiResponse`1[[NIBAUTH.Application.Operations.Auth.GetMe.GetMeVm, NIBAUTH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-17 13:53:55.265 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.GetMe (NIBAUTH.WebApi) in 100.8296ms
+2025-11-17 13:53:55.268 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.GetMe (NIBAUTH.WebApi)'
+2025-11-17 13:53:55.271 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/Auth/me - 200 null application/json; charset=utf-8 149.9841ms
+2025-11-17 13:55:06.088 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/Regions/all - null null
+2025-11-17 13:55:06.197 +05:00 [INF] Executing endpoint 'BB.WebApi.Controllers.RegionsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 13:55:06.216 +05:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Regions.RegionGetAllQueryVm]] GetAll() on controller BB.WebApi.Controllers.RegionsController (NIBAUTH.WebApi).
+2025-11-17 13:55:06.272 +05:00 [INF] NIB Request: RegionGetAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"$type":"RegionGetAllQuery"}
+2025-11-17 13:55:06.448 +05:00 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name", r."Code"
+FROM "Regions" AS r
+ORDER BY r."Name"
+2025-11-17 13:55:06.471 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Regions.RegionGetAllQueryVm'.
+2025-11-17 13:55:06.488 +05:00 [INF] Executed action BB.WebApi.Controllers.RegionsController.GetAll (NIBAUTH.WebApi) in 261.163ms
+2025-11-17 13:55:06.494 +05:00 [INF] Executed endpoint 'BB.WebApi.Controllers.RegionsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 13:55:06.501 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/Regions/all - 200 null application/json; charset=utf-8 426.0915ms
+2025-11-17 13:55:44.403 +05:00 [INF] Application is shutting down...
+2025-11-17 14:31:50.865 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-17 14:31:51.265 +05:00 [FTL]  Application start-up failed.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\Program.cs:line 169
+2025-11-17 14:32:07.430 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-17 14:32:07.609 +05:00 [FTL]  Application start-up failed.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\Program.cs:line 169
+2025-11-17 14:46:47.810 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-17 14:46:49.569 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-17 14:46:49.647 +05:00 [WRN] The WebRootPath was not found: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\wwwroot. Static files may be unavailable.
+2025-11-17 14:46:49.895 +05:00 [INF] Now listening on: https://localhost:7002
+2025-11-17 14:46:49.898 +05:00 [INF] Now listening on: http://localhost:5047
+2025-11-17 14:46:49.991 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 14:46:49.994 +05:00 [INF] Hosting environment: Development
+2025-11-17 14:46:49.996 +05:00 [INF] Content root path: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi
+2025-11-17 14:46:51.390 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+2025-11-17 14:46:51.760 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 388.384ms
+2025-11-17 14:46:51.851 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-17 14:46:51.869 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 18.0303ms
+2025-11-17 14:46:51.889 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+2025-11-17 14:46:52.074 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 185.2982ms
+2025-11-17 14:46:52.198 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+2025-11-17 14:46:52.270 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.8592ms
+2025-11-17 14:47:08.229 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5047/api/1.0/Auth/login - application/json 57
+2025-11-17 14:47:08.482 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-17 14:47:08.517 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Common.Models.ApiResponse`1[NIBAUTH.Application.Operations.Auth.Login.LoginVm]]] Login(NIBAUTH.Application.Operations.Auth.Login.LoginDto) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-17 14:47:09.329 +05:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-11-17 14:47:09.365 +05:00 [INF] NIB Request: LoginCommand "ece3d76b-beea-4e10-8b15-0515553cecea" {"Username":"martin","Password":"Admin123@!","$type":"LoginCommand"}
+2025-11-17 14:47:11.166 +05:00 [INF] Executed DbCommand (75ms) [Parameters=[@__request_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."RegionId", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName", r."Id", r."Code", r."Name"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+LEFT JOIN "Regions" AS r ON a."RegionId" = r."Id"
+WHERE a."UserName" = @__request_Username_0
+LIMIT 1
+2025-11-17 14:47:11.469 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2025-11-17 14:47:11.498 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."RegionId", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-17 14:47:11.637 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[@p20='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p21='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Guid), @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "RegionId" = @p16, "SecurityStamp" = @p17, "TwoFactorEnabled" = @p18, "UserName" = @p19
+WHERE "Id" = @p20 AND "ConcurrencyStamp" = @p21;
+2025-11-17 14:47:11.674 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Common.Models.ApiResponse`1[[NIBAUTH.Application.Operations.Auth.Login.LoginVm, NIBAUTH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-17 14:47:11.696 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi) in 3170.8318ms
+2025-11-17 14:47:11.700 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-17 14:47:11.722 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5047/api/1.0/Auth/login - 200 null application/json; charset=utf-8 3492.5473ms
+2025-11-17 14:51:25.426 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-11-17 14:51:25.435 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 10.2339ms
+2025-11-17 14:51:25.443 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7002/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-11-17 14:51:32.667 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7002/api/1.0/UserFinals - multipart/form-data; boundary=----WebKitFormBoundaryr5RLeEadl3YIBlbB 17010
+2025-11-17 14:51:32.696 +05:00 [INF] CORS policy execution successful.
+2025-11-17 14:51:32.720 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.Create (NIBAUTH.WebApi)'
+2025-11-17 14:51:32.732 +05:00 [INF] Route matched with {action = "Create", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Commands.CreateFinal.CreateUserFinalVm]] Create(NIBAUTH.Application.Operations.Final.Commands.CreateFinal.CreateUserFinalDto) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 14:51:32.913 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.Create (NIBAUTH.WebApi) in 177.0858ms
+2025-11-17 14:51:32.918 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.Create (NIBAUTH.WebApi)'
+2025-11-17 14:51:32.956 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7002/api/1.0/UserFinals - 417 null application/json 290.0175ms
+2025-11-17 14:55:28.964 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-17 14:55:29.997 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-17 14:55:30.062 +05:00 [WRN] The WebRootPath was not found: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\wwwroot. Static files may be unavailable.
+2025-11-17 14:55:30.234 +05:00 [INF] Now listening on: https://localhost:7002
+2025-11-17 14:55:30.236 +05:00 [INF] Now listening on: http://localhost:5047
+2025-11-17 14:55:30.319 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 14:55:30.321 +05:00 [INF] Hosting environment: Development
+2025-11-17 14:55:30.323 +05:00 [INF] Content root path: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi
+2025-11-17 14:55:31.065 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+2025-11-17 14:55:31.618 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 558.0743ms
+2025-11-17 14:55:31.672 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-17 14:55:31.690 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 18.3599ms
+2025-11-17 14:55:31.725 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+2025-11-17 14:55:31.807 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 81.8844ms
+2025-11-17 14:55:31.908 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+2025-11-17 14:55:31.969 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.5438ms
+2025-11-17 14:57:15.084 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-11-17 14:57:15.253 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 168.9688ms
+2025-11-17 14:57:15.262 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7002/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-11-17 14:57:19.440 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7002/api/1.0/UserFinals - multipart/form-data; boundary=----WebKitFormBoundaryeC42c9epqRBSuD0Y 17011
+2025-11-17 14:57:19.472 +05:00 [INF] CORS policy execution successful.
+2025-11-17 14:57:19.578 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.Create (NIBAUTH.WebApi)'
+2025-11-17 14:57:19.617 +05:00 [INF] Route matched with {action = "Create", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Commands.CreateFinal.CreateUserFinalVm]] Create(NIBAUTH.Application.Operations.Final.Commands.CreateFinal.CreateUserFinalDto) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 14:57:19.967 +05:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-11-17 14:57:19.995 +05:00 [INF] NIB Request: CreateUserFinalCommand "ece3d76b-beea-4e10-8b15-0515553cecea" {"CreatedByUserId":"ece3d76b-beea-4e10-8b15-0515553cecea","Image":{"ContentDisposition":"form-data; name=\"Image\"; filename=\"user.png\"","ContentType":"image/png","Headers":[{"Key":"Content-Disposition","Value":["form-data; name=\"Image\"; filename=\"user.png\""],"$type":"KeyValuePair`2"},{"Key":"Content-Type","Value":["image/png"],"$type":"KeyValuePair`2"}],"Length":16029,"Name":"Image","FileName":"user.png","$type":"FormFile"},"Fullname":"John Doe","Pinfl":"32154987456325","WeaponType":"PM","Distance":"25m","Amount":8,"Test":"6,5,0","Result":"6,6,7,5,0","Rating":"qoniqarli","$type":"CreateUserFinalCommand"}
+2025-11-17 14:57:21.301 +05:00 [INF] Executed DbCommand (63ms) [Parameters=[@__request_CreatedByUserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."RegionId", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__request_CreatedByUserId_0
+LIMIT 1
+2025-11-17 14:57:21.613 +05:00 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Guid), @p13='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UserFinals" ("Id", "Amount", "CreatedAt", "CreatedById", "Distance", "Fullname", "Image", "IsDeleted", "Pinfl", "Rating", "Result", "Test", "UpdatedById", "WeaponType")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "UpdatedAt";
+2025-11-17 14:57:21.657 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__final_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Image", u."Fullname", u."Pinfl", u."WeaponType", u."Distance", u."Amount", u."Test", u."Result", u."Rating"
+FROM "UserFinals" AS u
+WHERE u."Id" = @__final_Id_0
+LIMIT 1
+2025-11-17 14:57:21.671 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Final.Commands.CreateFinal.CreateUserFinalVm'.
+2025-11-17 14:57:21.691 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.Create (NIBAUTH.WebApi) in 2066.0036ms
+2025-11-17 14:57:21.697 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.Create (NIBAUTH.WebApi)'
+2025-11-17 14:57:21.719 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7002/api/1.0/UserFinals - 200 null application/json; charset=utf-8 2279.0744ms
+2025-11-17 14:59:45.322 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7002/api/1.0/UserFinals - multipart/form-data; boundary=----WebKitFormBoundaryF6Da100YxOLvbrA7 17021
+2025-11-17 14:59:45.340 +05:00 [INF] CORS policy execution successful.
+2025-11-17 14:59:45.345 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.Create (NIBAUTH.WebApi)'
+2025-11-17 14:59:45.347 +05:00 [INF] Route matched with {action = "Create", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Commands.CreateFinal.CreateUserFinalVm]] Create(NIBAUTH.Application.Operations.Final.Commands.CreateFinal.CreateUserFinalDto) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 14:59:45.357 +05:00 [INF] NIB Request: CreateUserFinalCommand "ece3d76b-beea-4e10-8b15-0515553cecea" {"CreatedByUserId":"ece3d76b-beea-4e10-8b15-0515553cecea","Image":{"ContentDisposition":"form-data; name=\"Image\"; filename=\"user.png\"","ContentType":"image/png","Headers":[{"Key":"Content-Disposition","Value":["form-data; name=\"Image\"; filename=\"user.png\""],"$type":"KeyValuePair`2"},{"Key":"Content-Type","Value":["image/png"],"$type":"KeyValuePair`2"}],"Length":16029,"Name":"Image","FileName":"user.png","$type":"FormFile"},"Fullname":"Alisher Qodirov","Pinfl":"64987654565464","WeaponType":"AKM","Distance":"100m","Amount":10,"Test":"6,5,0","Result":"6,6,7,5,8,7,8,8","Rating":"alo","$type":"CreateUserFinalCommand"}
+2025-11-17 14:59:45.411 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__request_CreatedByUserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."RegionId", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__request_CreatedByUserId_0
+LIMIT 1
+2025-11-17 14:59:45.422 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Guid), @p13='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UserFinals" ("Id", "Amount", "CreatedAt", "CreatedById", "Distance", "Fullname", "Image", "IsDeleted", "Pinfl", "Rating", "Result", "Test", "UpdatedById", "WeaponType")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "UpdatedAt";
+2025-11-17 14:59:45.429 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__final_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Image", u."Fullname", u."Pinfl", u."WeaponType", u."Distance", u."Amount", u."Test", u."Result", u."Rating"
+FROM "UserFinals" AS u
+WHERE u."Id" = @__final_Id_0
+LIMIT 1
+2025-11-17 14:59:45.435 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Final.Commands.CreateFinal.CreateUserFinalVm'.
+2025-11-17 14:59:45.439 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.Create (NIBAUTH.WebApi) in 87.9114ms
+2025-11-17 14:59:45.443 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.Create (NIBAUTH.WebApi)'
+2025-11-17 14:59:45.445 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7002/api/1.0/UserFinals - 200 null application/json; charset=utf-8 123.3939ms
+2025-11-17 15:03:58.615 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5047/api/1.0/UserFinals - multipart/form-data; boundary=--------------------------127484250374703927748415 17156
+2025-11-17 15:03:58.624 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.Create (NIBAUTH.WebApi)'
+2025-11-17 15:03:58.627 +05:00 [INF] Route matched with {action = "Create", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Commands.CreateFinal.CreateUserFinalVm]] Create(NIBAUTH.Application.Operations.Final.Commands.CreateFinal.CreateUserFinalDto) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 15:03:58.644 +05:00 [INF] NIB Request: CreateUserFinalCommand "ece3d76b-beea-4e10-8b15-0515553cecea" {"CreatedByUserId":"ece3d76b-beea-4e10-8b15-0515553cecea","Image":{"ContentDisposition":"form-data; name=\"Image\"; filename=\"user.png\"","ContentType":"image/png","Headers":[{"Key":"Content-Disposition","Value":["form-data; name=\"Image\"; filename=\"user.png\""],"$type":"KeyValuePair`2"},{"Key":"Content-Type","Value":["image/png"],"$type":"KeyValuePair`2"}],"Length":16029,"Name":"Image","FileName":"user.png","$type":"FormFile"},"Fullname":"Abdulla Sherozov Hakimjon o'g'li","Pinfl":"98546875231456","WeaponType":"PM","Distance":"25m","Amount":8,"Test":"5,6,0","Result":"5,0,5,0,0","Rating":"qoniqarsiz","$type":"CreateUserFinalCommand"}
+2025-11-17 15:03:58.800 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__request_CreatedByUserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."RegionId", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__request_CreatedByUserId_0
+LIMIT 1
+2025-11-17 15:03:58.813 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Guid), @p13='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UserFinals" ("Id", "Amount", "CreatedAt", "CreatedById", "Distance", "Fullname", "Image", "IsDeleted", "Pinfl", "Rating", "Result", "Test", "UpdatedById", "WeaponType")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "UpdatedAt";
+2025-11-17 15:03:58.820 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__final_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Image", u."Fullname", u."Pinfl", u."WeaponType", u."Distance", u."Amount", u."Test", u."Result", u."Rating"
+FROM "UserFinals" AS u
+WHERE u."Id" = @__final_Id_0
+LIMIT 1
+2025-11-17 15:03:58.826 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Final.Commands.CreateFinal.CreateUserFinalVm'.
+2025-11-17 15:03:58.831 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.Create (NIBAUTH.WebApi) in 199.8967ms
+2025-11-17 15:03:58.834 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.Create (NIBAUTH.WebApi)'
+2025-11-17 15:03:58.837 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5047/api/1.0/UserFinals - 200 null application/json; charset=utf-8 221.6259ms
+2025-11-17 15:15:53.213 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-17 15:15:54.434 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-17 15:15:54.530 +05:00 [WRN] The WebRootPath was not found: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\wwwroot. Static files may be unavailable.
+2025-11-17 15:15:54.787 +05:00 [INF] Now listening on: https://localhost:7002
+2025-11-17 15:15:54.789 +05:00 [INF] Now listening on: http://localhost:5047
+2025-11-17 15:15:54.901 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 15:15:54.904 +05:00 [INF] Hosting environment: Development
+2025-11-17 15:15:54.905 +05:00 [INF] Content root path: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi
+2025-11-17 15:15:56.098 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+2025-11-17 15:15:56.406 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 316.392ms
+2025-11-17 15:15:56.484 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-17 15:15:56.526 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 41.7114ms
+2025-11-17 15:15:56.544 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+2025-11-17 15:15:56.689 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 145.9113ms
+2025-11-17 15:15:56.805 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+2025-11-17 15:15:56.896 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.3271ms
+2025-11-17 15:16:07.877 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5047/api/1.0/Auth/login - application/json 57
+2025-11-17 15:16:08.085 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-17 15:16:08.119 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Common.Models.ApiResponse`1[NIBAUTH.Application.Operations.Auth.Login.LoginVm]]] Login(NIBAUTH.Application.Operations.Auth.Login.LoginDto) on controller NIBAUTH.WebApi.Controllers.AuthController (NIBAUTH.WebApi).
+2025-11-17 15:16:08.480 +05:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-11-17 15:16:08.506 +05:00 [INF] NIB Request: LoginCommand "ece3d76b-beea-4e10-8b15-0515553cecea" {"Username":"martin","Password":"Admin123@!","$type":"LoginCommand"}
+2025-11-17 15:16:09.972 +05:00 [INF] Executed DbCommand (73ms) [Parameters=[@__request_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."RegionId", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", a0."Id", a0."ConcurrencyStamp", a0."Name", a0."NormalizedName", r."Id", r."Code", r."Name"
+FROM "AspNetUsers" AS a
+LEFT JOIN "AspNetRoles" AS a0 ON a."DefaultRoleId" = a0."Id"
+LEFT JOIN "Regions" AS r ON a."RegionId" = r."Id"
+WHERE a."UserName" = @__request_Username_0
+LIMIT 1
+2025-11-17 15:16:10.253 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2025-11-17 15:16:10.278 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedAt", a."DefaultRoleId", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PhotoUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."RegionId", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-11-17 15:16:10.426 +05:00 [INF] Executed DbCommand (10ms) [Parameters=[@p20='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?', @p21='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Guid), @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "CreatedAt" = @p2, "DefaultRoleId" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "PhotoUrl" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "RegionId" = @p16, "SecurityStamp" = @p17, "TwoFactorEnabled" = @p18, "UserName" = @p19
+WHERE "Id" = @p20 AND "ConcurrencyStamp" = @p21;
+2025-11-17 15:16:10.468 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Common.Models.ApiResponse`1[[NIBAUTH.Application.Operations.Auth.Login.LoginVm, NIBAUTH.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-17 15:16:10.491 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi) in 2362.6604ms
+2025-11-17 15:16:10.496 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.AuthController.Login (NIBAUTH.WebApi)'
+2025-11-17 15:16:10.511 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5047/api/1.0/Auth/login - 200 null application/json; charset=utf-8 2633.5147ms
+2025-11-17 15:16:29.060 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/RegionBranches/all - multipart/form-data; boundary=--------------------------210713911190375059477638 199
+2025-11-17 15:16:29.078 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.RegionBranchesController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:16:29.087 +05:00 [INF] Route matched with {action = "GetAll", controller = "RegionBranches"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.RegionBranches.Queries.GetAll.RegionBranchesAllVm]] GetAll(System.String, System.Nullable`1[System.Guid]) on controller NIBAUTH.WebApi.Controllers.RegionBranchesController (NIBAUTH.WebApi).
+2025-11-17 15:16:29.111 +05:00 [INF] NIB Request: RegionBranchesAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","RegionId":"088b3deb-573e-48ce-8850-bb3f27b4529b","$type":"RegionBranchesAllQuery"}
+2025-11-17 15:16:29.171 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__request_RegionId_Value_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name", r."Description", r0."Id" AS "RegionId"
+FROM "RegionBranches" AS r
+INNER JOIN "Regions" AS r0 ON r."RegionId" = r0."Id"
+WHERE NOT (r."IsDeleted") AND r0."Id" = @__request_RegionId_Value_0
+2025-11-17 15:16:29.180 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.RegionBranches.Queries.GetAll.RegionBranchesAllVm'.
+2025-11-17 15:16:29.192 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.RegionBranchesController.GetAll (NIBAUTH.WebApi) in 100.3065ms
+2025-11-17 15:16:29.195 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.RegionBranchesController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:16:29.198 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/RegionBranches/all - 200 null application/json; charset=utf-8 137.8019ms
+2025-11-17 15:30:56.517 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-17 15:30:57.761 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-17 15:30:57.872 +05:00 [WRN] The WebRootPath was not found: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\wwwroot. Static files may be unavailable.
+2025-11-17 15:30:58.122 +05:00 [INF] Now listening on: https://localhost:7002
+2025-11-17 15:30:58.124 +05:00 [INF] Now listening on: http://localhost:5047
+2025-11-17 15:30:58.230 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 15:30:58.232 +05:00 [INF] Hosting environment: Development
+2025-11-17 15:30:58.234 +05:00 [INF] Content root path: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi
+2025-11-17 15:30:59.047 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+2025-11-17 15:30:59.303 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 260.2965ms
+2025-11-17 15:30:59.358 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-17 15:30:59.373 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 17.2234ms
+2025-11-17 15:30:59.423 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+2025-11-17 15:30:59.477 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.7759ms
+2025-11-17 15:30:59.605 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+2025-11-17 15:30:59.644 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.4733ms
+2025-11-17 15:31:17.164 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all - null null
+2025-11-17 15:31:17.367 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:31:17.403 +05:00 [INF] Route matched with {action = "GetAll", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm]] GetAll(System.String) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 15:31:17.730 +05:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-11-17 15:31:17.750 +05:00 [INF] NIB Request: UserFinalsAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","$type":"UserFinalsAllQuery"}
+2025-11-17 15:31:19.017 +05:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Image", u."Fullname", u."Pinfl", u."WeaponType", u."Distance", u."Amount", u."Test", u."Result", u."Rating"
+FROM "UserFinals" AS u
+WHERE NOT (u."IsDeleted")
+2025-11-17 15:31:19.095 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm'.
+2025-11-17 15:31:19.117 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi) in 1706.2258ms
+2025-11-17 15:31:19.121 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:31:19.133 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all - 200 null application/json; charset=utf-8 1969.2116ms
+2025-11-17 15:39:21.646 +05:00 [INF]  NIBAUTH WebAPI Starting...
+2025-11-17 15:39:22.893 +05:00 [INF] User profile is available. Using 'C:\Users\Oybek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-17 15:39:23.033 +05:00 [WRN] The WebRootPath was not found: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\wwwroot. Static files may be unavailable.
+2025-11-17 15:39:23.300 +05:00 [INF] Now listening on: http://localhost:5047
+2025-11-17 15:39:23.425 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 15:39:23.427 +05:00 [INF] Hosting environment: Development
+2025-11-17 15:39:23.430 +05:00 [INF] Content root path: C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi
+2025-11-17 15:39:24.235 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/swagger - null null
+2025-11-17 15:39:24.496 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/swagger - 301 0 null 274.9327ms
+2025-11-17 15:39:24.506 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/swagger/index.html - null null
+2025-11-17 15:39:24.604 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/swagger/index.html - 200 null text/html;charset=utf-8 97.8671ms
+2025-11-17 15:39:24.661 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-17 15:39:24.678 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 16.9863ms
+2025-11-17 15:39:24.729 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/_vs/browserLink - null null
+2025-11-17 15:39:24.777 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.471ms
+2025-11-17 15:39:24.884 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/swagger/v1/swagger.json - null null
+2025-11-17 15:39:24.978 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 93.8188ms
+2025-11-17 15:40:17.130 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:40:17.166 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:40:17.171 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - 204 null null 40.9769ms
+2025-11-17 15:40:17.189 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:40:17.202 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:40:17.416 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:40:17.474 +05:00 [INF] Route matched with {action = "GetAll", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm]] GetAll(System.String) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 15:40:17.906 +05:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-11-17 15:40:17.923 +05:00 [INF] NIB Request: UserFinalsAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","$type":"UserFinalsAllQuery"}
+2025-11-17 15:40:19.451 +05:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Image", u."Fullname", u."Pinfl", u."WeaponType", u."Distance", u."Amount", u."Test", u."Result", u."Rating"
+FROM "UserFinals" AS u
+WHERE NOT (u."IsDeleted")
+2025-11-17 15:40:19.544 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm'.
+2025-11-17 15:40:19.574 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi) in 2089.0049ms
+2025-11-17 15:40:19.577 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:40:19.590 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - 200 null application/json; charset=utf-8 2401.2107ms
+2025-11-17 15:41:22.708 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:41:22.718 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:41:22.720 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - 204 null null 13.5366ms
+2025-11-17 15:41:22.736 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:41:22.744 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:41:22.748 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:41:22.755 +05:00 [INF] Route matched with {action = "GetAll", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm]] GetAll(System.String) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 15:41:22.764 +05:00 [INF] NIB Request: UserFinalsAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","$type":"UserFinalsAllQuery"}
+2025-11-17 15:41:22.807 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Image", u."Fullname", u."Pinfl", u."WeaponType", u."Distance", u."Amount", u."Test", u."Result", u."Rating"
+FROM "UserFinals" AS u
+WHERE NOT (u."IsDeleted")
+2025-11-17 15:41:22.811 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm'.
+2025-11-17 15:41:22.814 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi) in 53.5902ms
+2025-11-17 15:41:22.816 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:41:22.819 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - 200 null application/json; charset=utf-8 82.6242ms
+2025-11-17 15:46:00.914 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:46:00.922 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:46:00.924 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - 204 null null 11.9729ms
+2025-11-17 15:46:00.941 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:46:00.946 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:46:00.957 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:46:00.960 +05:00 [INF] Route matched with {action = "GetAll", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm]] GetAll(System.String) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 15:46:00.984 +05:00 [INF] NIB Request: UserFinalsAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","$type":"UserFinalsAllQuery"}
+2025-11-17 15:46:01.143 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Image", u."Fullname", u."Pinfl", u."WeaponType", u."Distance", u."Amount", u."Test", u."Result", u."Rating"
+FROM "UserFinals" AS u
+WHERE NOT (u."IsDeleted")
+2025-11-17 15:46:01.150 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm'.
+2025-11-17 15:46:01.154 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi) in 188.6085ms
+2025-11-17 15:46:01.157 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:46:01.159 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - 200 null application/json; charset=utf-8 218.5617ms
+2025-11-17 15:46:25.282 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:46:25.288 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:46:25.290 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - 204 null null 8.2924ms
+2025-11-17 15:46:25.305 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:46:25.309 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:46:25.311 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:46:25.313 +05:00 [INF] Route matched with {action = "GetAll", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm]] GetAll(System.String) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 15:46:25.317 +05:00 [INF] NIB Request: UserFinalsAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","$type":"UserFinalsAllQuery"}
+2025-11-17 15:46:25.326 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Image", u."Fullname", u."Pinfl", u."WeaponType", u."Distance", u."Amount", u."Test", u."Result", u."Rating"
+FROM "UserFinals" AS u
+WHERE NOT (u."IsDeleted")
+2025-11-17 15:46:25.330 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm'.
+2025-11-17 15:46:25.333 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi) in 17.0033ms
+2025-11-17 15:46:25.336 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:46:25.338 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - 200 null application/json; charset=utf-8 33.1285ms
+2025-11-17 15:46:28.910 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:46:28.915 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:46:28.949 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - 204 null null 6.9185ms
+2025-11-17 15:46:28.980 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:46:28.991 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:46:28.995 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:46:28.998 +05:00 [INF] Route matched with {action = "GetAll", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm]] GetAll(System.String) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 15:46:29.005 +05:00 [INF] NIB Request: UserFinalsAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","$type":"UserFinalsAllQuery"}
+2025-11-17 15:46:29.013 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Image", u."Fullname", u."Pinfl", u."WeaponType", u."Distance", u."Amount", u."Test", u."Result", u."Rating"
+FROM "UserFinals" AS u
+WHERE NOT (u."IsDeleted")
+2025-11-17 15:46:29.019 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm'.
+2025-11-17 15:46:29.021 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi) in 17.9763ms
+2025-11-17 15:46:29.024 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:46:29.026 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - 200 null application/json; charset=utf-8 46.2904ms
+2025-11-17 15:48:23.740 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/static/final/17335b50-019e-4596-8ab0-bb05c582d0b0.png - null null
+2025-11-17 15:48:23.750 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:48:23.750 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/static/final/89b7b773-8f3a-42d1-9f2a-9e3f19916543.png - null null
+2025-11-17 15:48:23.788 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/static/final/41469a3e-3ae4-4fa7-804c-6ac927e4b96a.png - null null
+2025-11-17 15:48:23.804 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:48:23.820 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - 204 null null 72.0554ms
+2025-11-17 15:48:23.827 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:48:23.833 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:48:23.851 +05:00 [INF] Sending file. Request path: '/final/17335b50-019e-4596-8ab0-bb05c582d0b0.png'. Physical path: 'C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\static\final\17335b50-019e-4596-8ab0-bb05c582d0b0.png'
+2025-11-17 15:48:23.851 +05:00 [INF] Sending file. Request path: '/final/89b7b773-8f3a-42d1-9f2a-9e3f19916543.png'. Physical path: 'C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\static\final\89b7b773-8f3a-42d1-9f2a-9e3f19916543.png'
+2025-11-17 15:48:23.860 +05:00 [INF] Sending file. Request path: '/final/41469a3e-3ae4-4fa7-804c-6ac927e4b96a.png'. Physical path: 'C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\static\final\41469a3e-3ae4-4fa7-804c-6ac927e4b96a.png'
+2025-11-17 15:48:23.875 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:48:23.879 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/static/final/17335b50-019e-4596-8ab0-bb05c582d0b0.png - 200 16029 image/png 143.12ms
+2025-11-17 15:48:23.886 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/static/final/89b7b773-8f3a-42d1-9f2a-9e3f19916543.png - 200 16029 image/png 137.51ms
+2025-11-17 15:48:23.892 +05:00 [INF] Route matched with {action = "GetAll", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm]] GetAll(System.String) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 15:48:23.889 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/static/final/41469a3e-3ae4-4fa7-804c-6ac927e4b96a.png - 200 16029 image/png 100.6614ms
+2025-11-17 15:48:23.912 +05:00 [INF] NIB Request: UserFinalsAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","$type":"UserFinalsAllQuery"}
+2025-11-17 15:48:23.929 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Image", u."Fullname", u."Pinfl", u."WeaponType", u."Distance", u."Amount", u."Test", u."Result", u."Rating"
+FROM "UserFinals" AS u
+WHERE NOT (u."IsDeleted")
+2025-11-17 15:48:23.937 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm'.
+2025-11-17 15:48:23.940 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi) in 28.594ms
+2025-11-17 15:48:23.943 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:48:23.945 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - 200 null application/json; charset=utf-8 118.4072ms
+2025-11-17 15:48:25.353 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:48:25.359 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:48:25.361 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - 204 null null 8.7863ms
+2025-11-17 15:48:25.405 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:48:25.416 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:48:25.421 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:48:25.423 +05:00 [INF] Route matched with {action = "GetAll", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm]] GetAll(System.String) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 15:48:25.431 +05:00 [INF] NIB Request: UserFinalsAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","$type":"UserFinalsAllQuery"}
+2025-11-17 15:48:25.442 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Image", u."Fullname", u."Pinfl", u."WeaponType", u."Distance", u."Amount", u."Test", u."Result", u."Rating"
+FROM "UserFinals" AS u
+WHERE NOT (u."IsDeleted")
+2025-11-17 15:48:25.448 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm'.
+2025-11-17 15:48:25.452 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi) in 22.012ms
+2025-11-17 15:48:25.454 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:48:25.456 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - 200 null application/json; charset=utf-8 50.6419ms
+2025-11-17 15:48:33.358 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:48:33.365 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:48:33.367 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - 204 null null 8.5589ms
+2025-11-17 15:48:33.372 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:48:33.382 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:48:33.384 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:48:33.386 +05:00 [INF] Route matched with {action = "GetAll", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm]] GetAll(System.String) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 15:48:33.389 +05:00 [INF] NIB Request: UserFinalsAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","$type":"UserFinalsAllQuery"}
+2025-11-17 15:48:33.398 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Image", u."Fullname", u."Pinfl", u."WeaponType", u."Distance", u."Amount", u."Test", u."Result", u."Rating"
+FROM "UserFinals" AS u
+WHERE NOT (u."IsDeleted")
+2025-11-17 15:48:33.403 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm'.
+2025-11-17 15:48:33.405 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi) in 16.6384ms
+2025-11-17 15:48:33.408 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:48:33.410 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - 200 null application/json; charset=utf-8 38.5632ms
+2025-11-17 15:48:33.655 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/static/final/89b7b773-8f3a-42d1-9f2a-9e3f19916543.png - null null
+2025-11-17 15:48:33.655 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/static/final/17335b50-019e-4596-8ab0-bb05c582d0b0.png - null null
+2025-11-17 15:48:33.656 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/static/final/41469a3e-3ae4-4fa7-804c-6ac927e4b96a.png - null null
+2025-11-17 15:48:33.663 +05:00 [INF] Sending file. Request path: '/final/89b7b773-8f3a-42d1-9f2a-9e3f19916543.png'. Physical path: 'C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\static\final\89b7b773-8f3a-42d1-9f2a-9e3f19916543.png'
+2025-11-17 15:48:33.677 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/static/final/89b7b773-8f3a-42d1-9f2a-9e3f19916543.png - 200 16029 image/png 20.8883ms
+2025-11-17 15:48:33.684 +05:00 [INF] Sending file. Request path: '/final/41469a3e-3ae4-4fa7-804c-6ac927e4b96a.png'. Physical path: 'C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\static\final\41469a3e-3ae4-4fa7-804c-6ac927e4b96a.png'
+2025-11-17 15:48:33.684 +05:00 [INF] Sending file. Request path: '/final/17335b50-019e-4596-8ab0-bb05c582d0b0.png'. Physical path: 'C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\static\final\17335b50-019e-4596-8ab0-bb05c582d0b0.png'
+2025-11-17 15:48:33.689 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/static/final/41469a3e-3ae4-4fa7-804c-6ac927e4b96a.png - 200 16029 image/png 33.3634ms
+2025-11-17 15:48:33.692 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/static/final/17335b50-019e-4596-8ab0-bb05c582d0b0.png - 200 16029 image/png 37.1581ms
+2025-11-17 15:49:58.332 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:49:58.349 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:49:58.351 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5047/api/1.0/UserFinals/all?s= - 204 null null 18.6573ms
+2025-11-17 15:49:58.368 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - null null
+2025-11-17 15:49:58.378 +05:00 [INF] CORS policy execution successful.
+2025-11-17 15:49:58.380 +05:00 [INF] Executing endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:49:58.382 +05:00 [INF] Route matched with {action = "GetAll", controller = "UserFinals"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm]] GetAll(System.String) on controller NIBAUTH.WebApi.Controllers.UserFinalsController (NIBAUTH.WebApi).
+2025-11-17 15:49:58.386 +05:00 [INF] NIB Request: UserFinalsAllQuery "ece3d76b-beea-4e10-8b15-0515553cecea" {"Search":"","$type":"UserFinalsAllQuery"}
+2025-11-17 15:49:58.400 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Image", u."Fullname", u."Pinfl", u."WeaponType", u."Distance", u."Amount", u."Test", u."Result", u."Rating"
+FROM "UserFinals" AS u
+WHERE NOT (u."IsDeleted")
+2025-11-17 15:49:58.407 +05:00 [INF] Executing OkObjectResult, writing value of type 'NIBAUTH.Application.Operations.Final.Queries.GetAll.UserFinalsAllQueryVm'.
+2025-11-17 15:49:58.410 +05:00 [INF] Executed action NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi) in 24.0962ms
+2025-11-17 15:49:58.412 +05:00 [INF] Executed endpoint 'NIBAUTH.WebApi.Controllers.UserFinalsController.GetAll (NIBAUTH.WebApi)'
+2025-11-17 15:49:58.414 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5047/api/1.0/UserFinals/all?s= - 200 null application/json; charset=utf-8 45.859ms

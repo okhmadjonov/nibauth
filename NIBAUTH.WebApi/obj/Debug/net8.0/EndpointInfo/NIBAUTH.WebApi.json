@@ -646,6 +646,172 @@
         }
       }
     },
+    "/api/{version}/UserFinals": {
+      "post": {
+        "tags": [
+          "UserFinals"
+        ],
+        "parameters": [
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Fullname": {
+                    "type": "string"
+                  },
+                  "Pinfl": {
+                    "type": "string"
+                  },
+                  "WeaponType": {
+                    "type": "string"
+                  },
+                  "Distance": {
+                    "type": "string"
+                  },
+                  "Amount": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Test": {
+                    "type": "string"
+                  },
+                  "Result": {
+                    "type": "string"
+                  },
+                  "Rating": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Image": {
+                  "style": "form"
+                },
+                "Fullname": {
+                  "style": "form"
+                },
+                "Pinfl": {
+                  "style": "form"
+                },
+                "WeaponType": {
+                  "style": "form"
+                },
+                "Distance": {
+                  "style": "form"
+                },
+                "Amount": {
+                  "style": "form"
+                },
+                "Test": {
+                  "style": "form"
+                },
+                "Result": {
+                  "style": "form"
+                },
+                "Rating": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateUserFinalVm"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/{version}/UserFinals/all": {
+      "get": {
+        "tags": [
+          "UserFinals"
+        ],
+        "parameters": [
+          {
+            "name": "s",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserFinalsAllQueryVm"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/{version}/UserFinals/{id}": {
+      "delete": {
+        "tags": [
+          "UserFinals"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/{version}/Users": {
       "get": {
         "tags": [
@@ -930,6 +1096,53 @@
           "regionId": {
             "type": "string",
             "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateUserFinalVm": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "image": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullname": {
+            "type": "string",
+            "nullable": true
+          },
+          "pinfl": {
+            "type": "string",
+            "nullable": true
+          },
+          "weaponType": {
+            "type": "string",
+            "nullable": true
+          },
+          "distance": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "test": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "type": "string",
+            "nullable": true
+          },
+          "rating": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1240,6 +1453,66 @@
           },
           "photoUrl": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserFinalsAllDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "image": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullname": {
+            "type": "string",
+            "nullable": true
+          },
+          "pinfl": {
+            "type": "string",
+            "nullable": true
+          },
+          "weaponType": {
+            "type": "string",
+            "nullable": true
+          },
+          "distance": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "test": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "type": "string",
+            "nullable": true
+          },
+          "rating": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserFinalsAllQueryVm": {
+        "type": "object",
+        "properties": {
+          "list": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserFinalsAllDto"
+            },
             "nullable": true
           }
         },

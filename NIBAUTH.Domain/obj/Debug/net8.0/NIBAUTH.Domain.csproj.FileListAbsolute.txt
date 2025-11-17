@@ -6,6 +6,7 @@ C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIB
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIBAUTH.Domain.AssemblyInfoInputs.cache
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIBAUTH.Domain.AssemblyInfo.cs
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIBAUTH.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIBAUTH.Domain.sourcelink.json
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIBAUTH.Domain.dll
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\refint\NIBAUTH.Domain.dll
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Domain\obj\Debug\net8.0\NIBAUTH.Domain.pdb

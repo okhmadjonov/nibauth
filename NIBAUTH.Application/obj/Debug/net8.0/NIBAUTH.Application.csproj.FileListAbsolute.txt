@@ -8,6 +8,7 @@ C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Application\obj\Debug\net8.
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Application\obj\Debug\net8.0\NIBAUTH.Application.AssemblyInfoInputs.cache
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Application\obj\Debug\net8.0\NIBAUTH.Application.AssemblyInfo.cs
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Application\obj\Debug\net8.0\NIBAUTH.Application.csproj.CoreCompileInputs.cache
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Application\obj\Debug\net8.0\NIBAUTH.Application.sourcelink.json
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Application\obj\Debug\net8.0\NIBAUTH..BFFE711C.Up2Date
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Application\obj\Debug\net8.0\NIBAUTH.Application.dll
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Application\obj\Debug\net8.0\refint\NIBAUTH.Application.dll

@@ -11,6 +11,7 @@ C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Persistence\obj\Debug\net8.
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Persistence\obj\Debug\net8.0\NIBAUTH.Persistence.AssemblyInfoInputs.cache
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Persistence\obj\Debug\net8.0\NIBAUTH.Persistence.AssemblyInfo.cs
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Persistence\obj\Debug\net8.0\NIBAUTH.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Persistence\obj\Debug\net8.0\NIBAUTH.Persistence.sourcelink.json
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Persistence\obj\Debug\net8.0\NIBAUTH..C5A1850F.Up2Date
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Persistence\obj\Debug\net8.0\NIBAUTH.Persistence.dll
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.Persistence\obj\Debug\net8.0\refint\NIBAUTH.Persistence.dll

@@ -18,6 +18,7 @@ namespace NIBAUTH.Application.Interfaces
         public DbSet<BrancheBlock> BrancheBlocks { get; set; }
 
         public DbSet<Camera> Cameras { get; set; }
+        public DbSet<UserFinal> UserFinals { get; set; }
         DatabaseFacade Database { get; }
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);

@@ -15,6 +15,8 @@ namespace NIBAUTH.Persistence
         public DbSet<BrancheBlock> BrancheBlocks { get; set; }
 
         public DbSet<Camera> Cameras { get; set; }
+        public DbSet<UserFinal> UserFinals { get; set; }
+
 
 
 

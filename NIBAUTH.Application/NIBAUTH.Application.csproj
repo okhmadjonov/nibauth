@@ -27,4 +27,10 @@
     <ProjectReference Include="..\NIBAUTH.Domain\NIBAUTH.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Operations\Final\Commands\UpdateFinal\" />
+    <Folder Include="Operations\Final\Queries\GetList\" />
+    <Folder Include="Operations\Final\Queries\GetDetails\" />
+  </ItemGroup>
+
 </Project>

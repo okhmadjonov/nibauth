@@ -184,6 +184,7 @@ C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\NIB
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\NIBAUTH.WebApi.csproj.CoreCompileInputs.cache
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\NIBAUTH.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\NIBAUTH.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\NIBAUTH.WebApi.sourcelink.json
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -192,6 +193,7 @@ C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\sta
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\NIBAUTH..7EE400AF.Up2Date
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\NIBAUTH.WebApi.dll
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\refint\NIBAUTH.WebApi.dll
