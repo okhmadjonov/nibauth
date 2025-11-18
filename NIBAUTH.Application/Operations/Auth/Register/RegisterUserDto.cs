@@ -10,6 +10,7 @@ namespace NIBAUTH.Application.Operations.Users.Commands.RegisterUser
         public string? PhoneNumber { get; set; }
         public Guid? RoleId { get; set; }
         public Guid RegionId { get; set; }
+        public Guid? RegionBranchId { get; set; }
 
         public void Mapping(Profile profile)
         {
@@ -18,7 +19,8 @@ namespace NIBAUTH.Application.Operations.Users.Commands.RegisterUser
                 .ForMember(dest => dest.Password, opt => opt.MapFrom(src => src.Password))
                 .ForMember(dest => dest.PhoneNumber, opt => opt.MapFrom(src => src.PhoneNumber))
                 .ForMember(dest => dest.RoleId, opt => opt.MapFrom(src => src.RoleId))
-                .ForMember(dest => dest.RegionId, opt => opt.MapFrom(src => src.RegionId));
+                .ForMember(dest => dest.RegionId, opt => opt.MapFrom(src => src.RegionId))
+                .ForMember(dest => dest.RegionBranchId, opt => opt.MapFrom(src => src.RegionBranchId));
         }
     }
 }

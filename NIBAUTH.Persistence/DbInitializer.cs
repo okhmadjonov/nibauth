@@ -32,9 +32,6 @@ namespace NIBAUTH.Persistence
 
             await dbContext.Database.EnsureCreatedAsync();
 
-            #region Regions
-            Console.WriteLine("Seeding regions...");
-
             var existingRegions = await dbContext.Regions.ToListAsync();
             if (!existingRegions.Any())
             {
@@ -59,22 +56,37 @@ namespace NIBAUTH.Persistence
                 await dbContext.SaveChangesAsync();
                 Console.WriteLine("Regions seeded successfully");
             }
-            else
+
+            var existingBranches = await dbContext.RegionBranches.ToListAsync();
+                var tashkentRegion = await dbContext.Regions.FirstOrDefaultAsync(r => r.Code == "TS");
+            if (!existingBranches.Any())
             {
-                Console.WriteLine("Regions already exist, skipping...");
+                if (tashkentRegion != null)
+                {
+                    var tashkentBranches = new[]
+                    {
+                        new RegionBranche { Name = "MVD_A", RegionId = tashkentRegion.Id },
+                        new RegionBranche { Name = "MVD_B", RegionId = tashkentRegion.Id },
+                        new RegionBranche { Name = "MVD_C", RegionId = tashkentRegion.Id }
+                    };
+                    await dbContext.RegionBranches.AddRangeAsync(tashkentBranches);
+                    await dbContext.SaveChangesAsync();
+                    Console.WriteLine("Branches seeded successfully");
+                }
             }
-            #endregion Regions
 
             await SeedRoles(roleManager);
 
-            var tashkentRegion = await dbContext.Regions.FirstOrDefaultAsync(r => r.Code == "TS");
+            //var tashkentRegion = await dbContext.Regions.FirstOrDefaultAsync(r => r.Code == "TS");
             if (tashkentRegion == null)
             {
                 Console.WriteLine("Tashkent region not found!");
                 return;
             }
 
-            await SeedSuperAdmin(userManager, roleManager, tokenManager, adminPassword, config, dbContext, tashkentRegion);
+            var mvdABranch = await dbContext.RegionBranches.FirstOrDefaultAsync(b => b.Name == "MVD_A");
+
+            await SeedSuperAdmin(userManager, roleManager, tokenManager, adminPassword, config, dbContext, tashkentRegion, mvdABranch);
         }
 
         private static async Task SeedRoles(RoleManager<Role> roleManager)
@@ -104,9 +116,9 @@ namespace NIBAUTH.Persistence
             string adminPassword,
             IConfiguration config,
             NIBAUTHDbContext dbContext,
-            Region tashkentRegion)
+            Region tashkentRegion,
+            RegionBranche mvdABranch)
         {
-
             var superAdminRole = await roleManager.FindByNameAsync(Roles.SuperAdmin);
             if (superAdminRole == null)
             {
@@ -131,7 +143,8 @@ namespace NIBAUTH.Persistence
                     RefreshToken = tokenManager.GenerateRefreshToken(),
                     RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(
                         int.TryParse(config["JwtSettings:RefreshTokenValidityInDays"], out var days) ? days : 1),
-                    RegionId = tashkentRegion.Id
+                    RegionId = tashkentRegion.Id,
+                    RegionBranchId = mvdABranch?.Id
                 };
 
                 var createResult = await userManager.CreateAsync(user, adminPassword);
@@ -145,7 +158,6 @@ namespace NIBAUTH.Persistence
             }
             else
             {
-
                 if (!await userManager.IsInRoleAsync(user, Roles.SuperAdmin))
                     await userManager.AddToRoleAsync(user, Roles.SuperAdmin);
 
@@ -154,6 +166,7 @@ namespace NIBAUTH.Persistence
                     int.TryParse(config["JwtSettings:RefreshTokenValidityInDays"], out var days) ? days : 1);
 
                 user.RegionId = tashkentRegion.Id;
+                user.RegionBranchId = mvdABranch?.Id;
 
                 await userManager.UpdateAsync(user);
             }

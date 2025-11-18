@@ -91,6 +91,10 @@
                     "type": "string",
                     "format": "uuid"
                   },
+                  "RegionBranchId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
                   "photo": {
                     "type": "string",
                     "format": "binary"
@@ -111,6 +115,9 @@
                   "style": "form"
                 },
                 "RegionId": {
+                  "style": "form"
+                },
+                "RegionBranchId": {
                   "style": "form"
                 },
                 "photo": {
@@ -1215,34 +1222,11 @@
             "type": "string",
             "nullable": true
           },
-          "expiration": {
-            "type": "string",
-            "format": "date-time"
-          },
           "regionName": {
             "type": "string",
             "nullable": true
           },
-          "regionCode": {
-            "type": "string",
-            "nullable": true
-          },
-          "defaultRole": {
-            "type": "string",
-            "nullable": true
-          },
-          "roles": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "userName": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
+          "regionBranchName": {
             "type": "string",
             "nullable": true
           }
@@ -1412,6 +1396,11 @@
           "regionId": {
             "type": "string",
             "format": "uuid"
+          },
+          "regionBranchId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
           },
           "photoUrl": {
             "type": "string",

@@ -11,11 +11,9 @@ namespace NIBAUTH.Domain.Entities
         public DateTime? CreatedAt { get; set; }
         public string? RefreshToken { get; set; }
         public DateTime RefreshTokenExpiryTime { get; set; }
-
         public Guid? RegionId { get; set; }
         public Region? Region { get; set; }
-
-
-
+        public Guid? RegionBranchId { get; set; }
+        public RegionBranche? RegionBranch { get; set; }
     }
 }

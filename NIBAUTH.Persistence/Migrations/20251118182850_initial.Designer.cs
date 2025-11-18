@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace NIBAUTH.Persistence.Migrations
 {
     [DbContext(typeof(NIBAUTHDbContext))]
-    [Migration("20251117093152_user_fianl")]
-    partial class user_fianl
+    [Migration("20251118182850_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -410,6 +410,9 @@ namespace NIBAUTH.Persistence.Migrations
                     b.Property<DateTime>("RefreshTokenExpiryTime")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<Guid?>("RegionBranchId")
+                        .HasColumnType("uuid");
+
                     b.Property<Guid?>("RegionId")
                         .HasColumnType("uuid");
 
@@ -433,6 +436,8 @@ namespace NIBAUTH.Persistence.Migrations
                     b.HasIndex("NormalizedUserName")
                         .IsUnique()
                         .HasDatabaseName("UserNameIndex");
+
+                    b.HasIndex("RegionBranchId");
 
                     b.HasIndex("RegionId");
 
@@ -554,7 +559,8 @@ namespace NIBAUTH.Persistence.Migrations
                 {
                     b.HasOne("NIBAUTH.Domain.Entities.User", "CreatedBy")
                         .WithMany()
-                        .HasForeignKey("CreatedById");
+                        .HasForeignKey("CreatedById")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("NIBAUTH.Domain.Entities.RegionBranche", "RegionBranche")
                         .WithMany("BrancheBlocks")
@@ -564,7 +570,8 @@ namespace NIBAUTH.Persistence.Migrations
 
                     b.HasOne("NIBAUTH.Domain.Entities.User", "UpdatedBy")
                         .WithMany()
-                        .HasForeignKey("UpdatedById");
+                        .HasForeignKey("UpdatedById")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("CreatedBy");
 
@@ -583,11 +590,13 @@ namespace NIBAUTH.Persistence.Migrations
 
                     b.HasOne("NIBAUTH.Domain.Entities.User", "CreatedBy")
                         .WithMany()
-                        .HasForeignKey("CreatedById");
+                        .HasForeignKey("CreatedById")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("NIBAUTH.Domain.Entities.User", "UpdatedBy")
                         .WithMany()
-                        .HasForeignKey("UpdatedById");
+                        .HasForeignKey("UpdatedById")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("BrancheBlock");
 
@@ -600,17 +609,19 @@ namespace NIBAUTH.Persistence.Migrations
                 {
                     b.HasOne("NIBAUTH.Domain.Entities.User", "CreatedBy")
                         .WithMany()
-                        .HasForeignKey("CreatedById");
+                        .HasForeignKey("CreatedById")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("NIBAUTH.Domain.Entities.Region", "Region")
                         .WithMany("RegionBranches")
                         .HasForeignKey("RegionId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("NIBAUTH.Domain.Entities.User", "UpdatedBy")
                         .WithMany()
-                        .HasForeignKey("UpdatedById");
+                        .HasForeignKey("UpdatedById")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("CreatedBy");
 
@@ -626,24 +637,33 @@ namespace NIBAUTH.Persistence.Migrations
                         .HasForeignKey("DefaultRoleId")
                         .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("NIBAUTH.Domain.Entities.Region", "Region")
+                    b.HasOne("NIBAUTH.Domain.Entities.RegionBranche", "RegionBranch")
                         .WithMany("Users")
+                        .HasForeignKey("RegionBranchId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("NIBAUTH.Domain.Entities.Region", "Region")
+                        .WithMany()
                         .HasForeignKey("RegionId");
 
                     b.Navigation("DefaultRole");
 
                     b.Navigation("Region");
+
+                    b.Navigation("RegionBranch");
                 });
 
             modelBuilder.Entity("NIBAUTH.Domain.Entities.UserFinal", b =>
                 {
                     b.HasOne("NIBAUTH.Domain.Entities.User", "CreatedBy")
                         .WithMany()
-                        .HasForeignKey("CreatedById");
+                        .HasForeignKey("CreatedById")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("NIBAUTH.Domain.Entities.User", "UpdatedBy")
                         .WithMany()
-                        .HasForeignKey("UpdatedById");
+                        .HasForeignKey("UpdatedById")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("CreatedBy");
 
@@ -658,13 +678,13 @@ namespace NIBAUTH.Persistence.Migrations
             modelBuilder.Entity("NIBAUTH.Domain.Entities.Region", b =>
                 {
                     b.Navigation("RegionBranches");
-
-                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("NIBAUTH.Domain.Entities.RegionBranche", b =>
                 {
                     b.Navigation("BrancheBlocks");
+
+                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("NIBAUTH.Domain.Entities.Role", b =>

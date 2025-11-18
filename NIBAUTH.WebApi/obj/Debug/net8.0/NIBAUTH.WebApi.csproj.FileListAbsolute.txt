@@ -193,10 +193,10 @@ C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\sta
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\NIBAUTH..7EE400AF.Up2Date
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\NIBAUTH.WebApi.dll
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\refint\NIBAUTH.WebApi.dll
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\NIBAUTH.WebApi.pdb
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\NIBAUTH.WebApi.genruntimeconfig.cache
 C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\ref\NIBAUTH.WebApi.dll
+C:\Users\Oybek\Desktop\nib-auth-back\NIBAUTH\NIBAUTH.WebApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

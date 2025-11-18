@@ -46,6 +46,20 @@ namespace NIBAUTH.Application.Operations.Users.Commands.RegisterUser
             if (region == null)
                 throw new NotFoundException(nameof(Region), request.RegionId);
 
+            RegionBranche? regionBranch = null;
+            if (request.RegionBranchId.HasValue && request.RegionBranchId.Value != Guid.Empty)
+            {
+                regionBranch = await _context.RegionBranches
+                    .Include(rb => rb.Region)
+                    .FirstOrDefaultAsync(rb => rb.Id == request.RegionBranchId.Value, cancellationToken);
+
+                if (regionBranch == null)
+                    throw new NotFoundException(nameof(RegionBranche), request.RegionBranchId);
+
+                if (regionBranch.RegionId != request.RegionId)
+                    throw new NotFoundException(nameof(Region), request.RegionId);
+            }
+
             Role? role;
             if (request.RoleId.HasValue && request.RoleId.Value != Guid.Empty)
             {
@@ -86,11 +100,12 @@ namespace NIBAUTH.Application.Operations.Users.Commands.RegisterUser
                 PhotoUrl = photoUrl,
                 DefaultRoleId = role.Id,
                 RegionId = request.RegionId,
+                RegionBranchId = request.RegionBranchId,
                 CreatedAt = DateTime.UtcNow,
                 Email = null,
                 RefreshToken = _tokenManager.GenerateRefreshToken(),
                 RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(
-                        int.TryParse(_configuration["JwtSettings:RefreshTokenValidityInDays"], out var days) ? days : 1)
+                    int.TryParse(_configuration["JwtSettings:RefreshTokenValidityInDays"], out var days) ? days : 1)
             };
 
             var createResult = await _userManager.CreateAsync(user, request.Password);
@@ -111,6 +126,7 @@ namespace NIBAUTH.Application.Operations.Users.Commands.RegisterUser
                 PhoneNumber = user.PhoneNumber,
                 RoleId = user.DefaultRoleId ?? Guid.Empty,
                 RegionId = user.RegionId ?? Guid.Empty,
+                RegionBranchId = user.RegionBranchId,
                 PhotoUrl = user.PhotoUrl
             };
         }
