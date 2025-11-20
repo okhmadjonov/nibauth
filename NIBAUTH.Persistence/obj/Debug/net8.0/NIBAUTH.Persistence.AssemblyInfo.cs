@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NIBAUTH.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74008ba747fc5dac4376171f007a08d41436cca7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c9178b35e79f7ea21c76a9967fd351d179afb7d")]
 [assembly: System.Reflection.AssemblyProductAttribute("NIBAUTH.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NIBAUTH.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

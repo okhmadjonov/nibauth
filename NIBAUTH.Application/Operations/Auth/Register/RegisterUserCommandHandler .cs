@@ -60,27 +60,17 @@ namespace NIBAUTH.Application.Operations.Users.Commands.RegisterUser
                     throw new NotFoundException(nameof(Region), request.RegionId);
             }
 
-            Role? role;
-            if (request.RoleId.HasValue && request.RoleId.Value != Guid.Empty)
-            {
-                role = await _roleManager.FindByIdAsync(request.RoleId.Value.ToString());
-                if (role == null)
-                    throw new NotFoundException(nameof(Role), request.RoleId);
-            }
-            else
-            {
-                role = await _roleManager.FindByNameAsync(Roles.User);
-                if (role == null)
-                    throw new NotFoundException(nameof(Role), Roles.User);
-            }
+            var adminRole = await _roleManager.FindByNameAsync("Admin");
+            if (adminRole == null)
+                throw new NotFoundException(nameof(Role), "Admin role not found in the system");
 
             string? photoUrl = null;
             if (request.Photo != null)
             {
                 var uploadPath = Path.Combine(
                     _webHostEnvironment.ContentRootPath,
-                    _configuration["MediaPaths:MEDIA_ROOT"],
-                    _configuration["MediaPaths:USER_ROOT"]);
+                    _configuration["MediaPaths:MEDIA_ROOT"] ?? "Media",
+                    _configuration["MediaPaths:USER_ROOT"] ?? "Users");
 
                 Directory.CreateDirectory(uploadPath);
 
@@ -98,7 +88,7 @@ namespace NIBAUTH.Application.Operations.Users.Commands.RegisterUser
                 UserName = request.UserName,
                 PhoneNumber = request.PhoneNumber,
                 PhotoUrl = photoUrl,
-                DefaultRoleId = role.Id,
+                DefaultRoleId = adminRole.Id, 
                 RegionId = request.RegionId,
                 RegionBranchId = request.RegionBranchId,
                 CreatedAt = DateTime.UtcNow,
@@ -110,13 +100,13 @@ namespace NIBAUTH.Application.Operations.Users.Commands.RegisterUser
 
             var createResult = await _userManager.CreateAsync(user, request.Password);
             if (!createResult.Succeeded)
-                throw new DecrypException(string.Join(", ", createResult.Errors.Select(e => e.Description)));
+                throw new Exception(string.Join(", ", createResult.Errors.Select(e => e.Description)));
 
-            var roleResult = await _userManager.AddToRoleAsync(user, role.Name);
+            var roleResult = await _userManager.AddToRoleAsync(user, adminRole.Name);
             if (!roleResult.Succeeded)
             {
                 await _userManager.DeleteAsync(user);
-                throw new CredentialException(string.Join(", ", roleResult.Errors.Select(e => e.Description)));
+                throw new Exception(string.Join(", ", roleResult.Errors.Select(e => e.Description)));
             }
 
             return new RegisterUserVm
@@ -124,7 +114,6 @@ namespace NIBAUTH.Application.Operations.Users.Commands.RegisterUser
                 Id = user.Id,
                 UserName = user.UserName,
                 PhoneNumber = user.PhoneNumber,
-                RoleId = user.DefaultRoleId ?? Guid.Empty,
                 RegionId = user.RegionId ?? Guid.Empty,
                 RegionBranchId = user.RegionBranchId,
                 PhotoUrl = user.PhotoUrl

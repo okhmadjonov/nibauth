@@ -14,14 +14,14 @@ namespace NIBAUTH.Application.Operations.Users.Commands.RegisterUser
                 .NotEmpty().WithMessage("Password is required")
                 .MinimumLength(6).WithMessage("Password must be at least 6 characters");
 
-            RuleFor(x => x.RoleId)
-                .NotEmpty().WithMessage("Role is required")
-                .NotEqual(Guid.Empty).WithMessage("Invalid role");
-
             RuleFor(x => x.PhoneNumber)
                 .NotEmpty().WithMessage("Phone number is required")
                 .Matches(@"^\+998\d{9}$")
                 .WithMessage("Phone number must be a valid Uzbekistan number (e.g., +998901234567)");
+
+            RuleFor(x => x.RegionId)
+                .NotEmpty().WithMessage("Region is required")
+                .NotEqual(Guid.Empty).WithMessage("Invalid region");
         }
     }
 }

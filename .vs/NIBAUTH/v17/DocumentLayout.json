@@ -3,72 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\auth\\register\\registerusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\auth\\register\\registerusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\auth\\register\\registerusercommandhandler .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\auth\\register\\registerusercommandhandler .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\auth\\login\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\auth\\login\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\auth\\register\\registerusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\auth\\register\\registerusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\auth\\login\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\auth\\login\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\auth\\register\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\auth\\register\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8413204-ED68-4D47-94EE-07495DFE5A4A}|NIBAUTH.WebApi\\NIBAUTH.WebApi.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8413204-ED68-4D47-94EE-07495DFE5A4A}|NIBAUTH.WebApi\\NIBAUTH.WebApi.csproj|solutionrelative:nibauth.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8413204-ED68-4D47-94EE-07495DFE5A4A}|NIBAUTH.WebApi\\NIBAUTH.WebApi.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.webapi\\runseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8413204-ED68-4D47-94EE-07495DFE5A4A}|NIBAUTH.WebApi\\NIBAUTH.WebApi.csproj|solutionrelative:nibauth.webapi\\runseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4657BA9E-C304-4BF0-BA5E-0F7E1FAFE506}|NIBAUTH.Persistence\\NIBAUTH.Persistence.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.persistence\\nibauthdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4657BA9E-C304-4BF0-BA5E-0F7E1FAFE506}|NIBAUTH.Persistence\\NIBAUTH.Persistence.csproj|solutionrelative:nibauth.persistence\\nibauthdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4657BA9E-C304-4BF0-BA5E-0F7E1FAFE506}|NIBAUTH.Persistence\\NIBAUTH.Persistence.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.persistence\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4657BA9E-C304-4BF0-BA5E-0F7E1FAFE506}|NIBAUTH.Persistence\\NIBAUTH.Persistence.csproj|solutionrelative:nibauth.persistence\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\interfaces\\inibauthdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\interfaces\\inibauthdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\regionbranches\\commands\\createregionbranche\\createregionbranchehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\regionbranches\\commands\\createregionbranche\\createregionbranchehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AF2A78-37BF-4DB3-9818-BC3364CD4600}|NIBAUTH.Domain\\NIBAUTH.Domain.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.domain\\entities\\regionbranche.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AF2A78-37BF-4DB3-9818-BC3364CD4600}|NIBAUTH.Domain\\NIBAUTH.Domain.csproj|solutionrelative:nibauth.domain\\entities\\regionbranche.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\regionbranches\\commands\\createregionbranche\\createregionbranchecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\regionbranches\\commands\\createregionbranche\\createregionbranchecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\regionbranches\\commands\\createregionbranche\\createregionbranchedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\regionbranches\\commands\\createregionbranche\\createregionbranchedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\regionbranches\\commands\\createregionbranche\\createregionbranchevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\regionbranches\\commands\\createregionbranche\\createregionbranchevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\regionbranches\\commands\\createregionbranche\\createregionbranchevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\regionbranches\\commands\\createregionbranche\\createregionbranchevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8413204-ED68-4D47-94EE-07495DFE5A4A}|NIBAUTH.WebApi\\NIBAUTH.WebApi.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.webapi\\controllers\\regionbranchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8413204-ED68-4D47-94EE-07495DFE5A4A}|NIBAUTH.WebApi\\NIBAUTH.WebApi.csproj|solutionrelative:nibauth.webapi\\controllers\\regionbranchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AF2A78-37BF-4DB3-9818-BC3364CD4600}|NIBAUTH.Domain\\NIBAUTH.Domain.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.domain\\entities\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AF2A78-37BF-4DB3-9818-BC3364CD4600}|NIBAUTH.Domain\\NIBAUTH.Domain.csproj|solutionrelative:nibauth.domain\\entities\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AF2A78-37BF-4DB3-9818-BC3364CD4600}|NIBAUTH.Domain\\NIBAUTH.Domain.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AF2A78-37BF-4DB3-9818-BC3364CD4600}|NIBAUTH.Domain\\NIBAUTH.Domain.csproj|solutionrelative:nibauth.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|c:\\users\\oybek\\desktop\\nib-auth-back\\nibauth\\nibauth.application\\operations\\auth\\register\\registeruservm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5803E8-55E5-4D1B-9ADB-9419E3D0668A}|NIBAUTH.Application\\NIBAUTH.Application.csproj|solutionrelative:nibauth.application\\operations\\auth\\register\\registeruservm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -87,222 +39,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RegisterUserCommandHandler .cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs",
-              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Title": "RegisterUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommand.cs",
+              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommand.cs",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommand.cs",
+              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:47:45.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.WebApi\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.WebApi\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.WebApi\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "NIBAUTH.WebApi\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:35:44.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Login\\LoginHandler.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Auth\\Login\\LoginHandler.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Login\\LoginHandler.cs",
-              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Login\\LoginHandler.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAowHoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:35:08.357Z",
+              "WhenOpened": "2025-11-20T09:06:42.808Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginVm.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Login\\LoginVm.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Auth\\Login\\LoginVm.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Login\\LoginVm.cs",
-              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Login\\LoginVm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
+              "Title": "RegisterUserCommandHandler .cs",
+              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs",
+              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs",
+              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:35:02.667Z",
+              "WhenOpened": "2025-11-20T09:06:35.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NIBAUTHDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Persistence\\NIBAUTHDbContext.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Persistence\\NIBAUTHDbContext.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Persistence\\NIBAUTHDbContext.cs",
-              "RelativeToolTip": "NIBAUTH.Persistence\\NIBAUTHDbContext.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "RegisterUserCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandValidator.cs",
+              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandValidator.cs",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandValidator.cs",
+              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:25:53.94Z",
+              "WhenOpened": "2025-11-20T09:06:26.976Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Persistence\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Persistence\\DbInitializer.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Persistence\\DbInitializer.cs",
-              "RelativeToolTip": "NIBAUTH.Persistence\\DbInitializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "RegisterUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserDto.cs",
+              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserDto.cs",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserDto.cs",
+              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:25:51.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "INIBAUTHDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Interfaces\\INIBAUTHDbContext.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Application\\Interfaces\\INIBAUTHDbContext.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Interfaces\\INIBAUTHDbContext.cs",
-              "RelativeToolTip": "NIBAUTH.Application\\Interfaces\\INIBAUTHDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:25:40.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateRegionBrancheDto.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheDto.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheDto.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheDto.cs",
-              "RelativeToolTip": "NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:10:38.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CreateRegionBrancheCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheCommand.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheCommand.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheCommand.cs",
-              "RelativeToolTip": "NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:10:31.444Z",
+              "WhenOpened": "2025-11-20T09:06:19.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "runseed.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.WebApi\\runseed.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.WebApi\\runseed.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.WebApi\\runseed.cs",
-              "RelativeToolTip": "NIBAUTH.WebApi\\runseed.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Title": "RegisterUserVm.cs",
+              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserVm.cs",
+              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserVm.cs",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserVm.cs",
+              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserVm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:07:52.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateRegionBrancheHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheHandler.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheHandler.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheHandler.cs",
-              "RelativeToolTip": "NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheHandler.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAswDsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:10:48.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RegionBranche.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Domain\\Entities\\RegionBranche.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Domain\\Entities\\RegionBranche.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Domain\\Entities\\RegionBranche.cs",
-              "RelativeToolTip": "NIBAUTH.Domain\\Entities\\RegionBranche.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:10:00.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CreateRegionBrancheValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheValidator.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheValidator.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheValidator.cs",
-              "RelativeToolTip": "NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:10:19.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CreateRegionBrancheVm.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheVm.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheVm.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheVm.cs",
-              "RelativeToolTip": "NIBAUTH.Application\\Operations\\RegionBranches\\Commands\\CreateRegionBranche\\CreateRegionBrancheVm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:09:15.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RegionBranchesController.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.WebApi\\Controllers\\RegionBranchesController.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.WebApi\\Controllers\\RegionBranchesController.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.WebApi\\Controllers\\RegionBranchesController.cs",
-              "RelativeToolTip": "NIBAUTH.WebApi\\Controllers\\RegionBranchesController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAIwDAAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:17:16.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Region.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Domain\\Entities\\Region.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Domain\\Entities\\Region.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Domain\\Entities\\Region.cs",
-              "RelativeToolTip": "NIBAUTH.Domain\\Entities\\Region.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:09:52.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "NIBAUTH.Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Domain\\Entities\\User.cs",
-              "RelativeToolTip": "NIBAUTH.Domain\\Entities\\User.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAmwBIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:09:43.014Z",
+              "WhenOpened": "2025-11-20T09:03:07.391Z",
               "EditorCaption": ""
             }
           ]

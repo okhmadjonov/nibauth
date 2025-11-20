@@ -123,11 +123,6 @@
         "IsRequired": false
       },
       {
-        "Name": "RoleId",
-        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
         "Name": "RegionId",
         "Type": "System.Guid",
         "IsRequired": false

@@ -83,10 +83,6 @@
                   "PhoneNumber": {
                     "type": "string"
                   },
-                  "RoleId": {
-                    "type": "string",
-                    "format": "uuid"
-                  },
                   "RegionId": {
                     "type": "string",
                     "format": "uuid"
@@ -109,9 +105,6 @@
                   "style": "form"
                 },
                 "PhoneNumber": {
-                  "style": "form"
-                },
-                "RoleId": {
                   "style": "form"
                 },
                 "RegionId": {
@@ -1386,11 +1379,6 @@
           },
           "phoneNumber": {
             "type": "string",
-            "nullable": true
-          },
-          "roleId": {
-            "type": "string",
-            "format": "uuid",
             "nullable": true
           },
           "regionId": {
