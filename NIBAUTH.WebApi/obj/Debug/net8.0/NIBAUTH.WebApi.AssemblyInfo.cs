@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NIBAUTH.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c9178b35e79f7ea21c76a9967fd351d179afb7d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0f2b969bbde2899afb8d5776a635957f0e45b2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("NIBAUTH.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NIBAUTH.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

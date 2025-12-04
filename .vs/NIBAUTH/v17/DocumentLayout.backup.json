@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommand.cs",
               "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommand.cs",
               "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-20T09:06:42.808Z",
               "EditorCaption": ""
@@ -55,12 +55,11 @@
               "Title": "RegisterUserCommandHandler .cs",
               "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs",
               "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs*",
-              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs*",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs",
+              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandHandler .cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAcwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T09:06:35.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T09:06:35.308Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserCommandValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T09:06:26.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T09:06:26.976Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T09:06:19.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T09:06:19.438Z"
             },
             {
               "$type": "Document",
@@ -94,12 +91,11 @@
               "Title": "RegisterUserVm.cs",
               "DocumentMoniker": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserVm.cs",
               "RelativeDocumentMoniker": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserVm.cs",
-              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserVm.cs*",
-              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserVm.cs*",
+              "ToolTip": "C:\\Users\\Oybek\\Desktop\\nib-auth-back\\NIBAUTH\\NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserVm.cs",
+              "RelativeToolTip": "NIBAUTH.Application\\Operations\\Auth\\Register\\RegisterUserVm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T09:03:07.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T09:03:07.391Z"
             }
           ]
         }

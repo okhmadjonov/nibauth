@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NIBAUTH.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74008ba747fc5dac4376171f007a08d41436cca7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0f2b969bbde2899afb8d5776a635957f0e45b2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("NIBAUTH.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NIBAUTH.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
